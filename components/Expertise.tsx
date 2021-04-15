@@ -3,7 +3,7 @@ type Props = {
   value: number;
 };
 
-const IndustryExperise = (props: Props) => {
+const Expertise = (props: Props) => {
   return (
     <div>
       <div className="mb-1">{props.label}</div>
@@ -19,4 +19,4 @@ const IndustryExperise = (props: Props) => {
   );
 };
 
-export default IndustryExperise;
+export default Expertise;
