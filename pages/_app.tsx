@@ -1,7 +1,20 @@
+import { DefaultSeo } from "next-seo";
 import "tailwindcss/tailwind.css";
 
-function Portfolio({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function App({ Component, pageProps }) {
+  return (
+    <>
+      <DefaultSeo
+        title="Alex Rohleder - Software Developer - Contractor"
+        twitter={{
+          handle: "@alexrohleder",
+          site: "@alexrohleder",
+          cardType: "summary_large_image",
+        }}
+      />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default Portfolio;
+export default App;

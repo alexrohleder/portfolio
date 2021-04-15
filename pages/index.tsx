@@ -39,7 +39,7 @@ const Experience = (props: Props) => {
       <h1 className="font-semibold">{props.title}</h1>
 
       <h2 className="font-semibold text-blue-500">
-        <a href={props.employeerWebsite} target="_blank">
+        <a href={props.employeerWebsite} target="_blank" rel="noopener">
           {props.employeer}
         </a>
       </h2>
@@ -82,7 +82,7 @@ const Experience = (props: Props) => {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={2}
+              strokeWidth={1}
               d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
             />
           </svg>
@@ -105,7 +105,9 @@ const Index = () => (
   <main className="container m-auto px-8 py-24">
     <header className="flex flex-col lg:flex-row gap-4">
       <img
+        loading="lazy"
         className="rounded h-36 w-36"
+        alt="Alex Rohleder's profile picture"
         src="https://media-exp1.licdn.com/dms/image/C5603AQHs6kpEH849ZQ/profile-displayphoto-shrink_800_800/0/1547587447758?e=1623888000&v=beta&t=dkWP8_jl1mg6g63e33yLggzQDbu6oakK0ui2FZKDQ-c"
       />
       <div className="flex flex-col w-full lg:h-36 lg:justify-between">
@@ -118,11 +120,12 @@ const Index = () => (
             className="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
             href="https://calendly.com/alexrohleder/30min"
             target="_blank"
+            rel="noopener"
           >
             Schedule a meeting
           </a>
         </div>
-        <div className="mt-24 grid lg:grid-rows-2 lg:mt-0 lg:grid-cols-2 gap-2 w-full">
+        <div className="mt-24 grid lg:grid-rows-2 lg:mt-0 lg:grid-cols-3 gap-2 w-full">
           <div className="flex gap-2 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -171,10 +174,37 @@ const Index = () => (
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={1}
-                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1}
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
               />
             </svg>
-            <a href="https://linkedin.com/in/alexrohleder" target="_blank">
+            Trondheim, Norway (or remote)
+          </div>
+          <div className="flex gap-2 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1}
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
+            <a
+              href="https://linkedin.com/in/alexrohleder"
+              target="_blank"
+              rel="noopener"
+            >
               linkedin.com/in/alexrohleder
             </a>
           </div>
@@ -190,16 +220,39 @@ const Index = () => (
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={1}
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
               />
+            </svg>
+            <a
+              href="https://twitter.com/alexrohleder"
+              target="_blank"
+              rel="noopener"
+            >
+              twitter.com/alexrohleder
+            </a>
+          </div>
+          <div className="flex gap-2 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={1}
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
               />
             </svg>
-            Trondheim, Norway (open to remote)
+            <a
+              href="https://github.com/alexrohleder"
+              target="_blank"
+              rel="noopener"
+            >
+              github.com/alexrohleder
+            </a>
           </div>
         </div>
       </div>
@@ -283,10 +336,11 @@ const Index = () => (
         <section>
           <h1 className="text-xl font-semibold mb-4">Education</h1>
           <ul className="list-disc">
-            <li>
+            <li className="mb-2">
               <a
                 href="https://en.wikipedia.org/wiki/Bachelor_of_Information_Systems#:~:text=Bachelor%20of%20Information%20Systems%20is,covered%20in%20the%20study%20program.&text=A%20typical%20job%20gained%20after%20graduation%20is%20IT%20consulting."
                 target="_blank"
+                rel="noopener"
               >
                 Information Systems Bachelor Degree
               </a>
@@ -295,6 +349,7 @@ const Index = () => (
               <a
                 href="https://www.zend-zce.com/en/yellow-pages/ZEND029184"
                 target="_blank"
+                rel="noopener"
               >
                 Certified PHP Engineer by ZEND
               </a>
@@ -312,9 +367,9 @@ const Index = () => (
           <p className="mt-4 text-sm text-gray-500">
             Didn't find the technology you are looking for?
             <br />
-            <a className="text-blue-500 hover:underline" href="">
+            <button className="text-blue-500 hover:underline">
               Click here to search the full list
-            </a>
+            </button>
           </p>
         </section>
       </div>
