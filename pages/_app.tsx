@@ -6,6 +6,7 @@ function App({ Component, pageProps }) {
     <>
       <DefaultSeo
         title="Alex Rohleder - Software Developer - Contractor"
+        description="Software engineer with 5+ years of experience. Specialized in front-end and with a foot in every step of the development pipeline. Open for contractor jobs."
         twitter={{
           handle: "@alexrohleder",
           site: "@alexrohleder",
