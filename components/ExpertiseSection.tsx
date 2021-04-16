@@ -13,9 +13,9 @@ const ExpertiseSection = () => {
       <p className="mt-4 text-sm text-gray-500">
         Didn't find the technology you are looking for?
         <br />
-        <button className="text-blue-700 hover:underline">
+        <a className="text-blue-700 hover:underline" href="/expertise">
           Click here to search the full list
-        </button>
+        </a>
       </p>
     </Section>
   );

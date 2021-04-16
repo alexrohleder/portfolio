@@ -22,8 +22,13 @@ const Experience = (props: Props) => {
     <article>
       <h1 className="font-semibold">{props.title}</h1>
 
-      <h2 className="font-semibold text-blue-700">
-        <a href={props.employeerWebsite} target="_blank" rel="noopener">
+      <h2 className="font-semibold">
+        <a
+          className="text-blue-700 hover:underline"
+          href={props.employeerWebsite}
+          target="_blank"
+          rel="noopener"
+        >
           {props.employeer}
         </a>
       </h2>
