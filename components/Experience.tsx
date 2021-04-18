@@ -33,7 +33,7 @@ const Experience = (props: Props) => {
         </a>
       </h2>
 
-      <div className="flex gap-4 text-gray-500 text-sm">
+      <div className="flex gap-4 text-gray-500 text-sm mt-1">
         <div className="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
