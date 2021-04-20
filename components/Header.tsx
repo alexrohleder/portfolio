@@ -20,14 +20,14 @@ const Header = () => {
           </div>
           <div className="flex gap-2">
             <a
-              className="px-4 py-2 text-sm font-medium bg-gray-200 rounded hover:bg-gray-300"
+              className="px-4 py-2 text-sm font-medium bg-gray-200 rounded hover:bg-gray-300 transition-colors"
               href="/api/curriculum"
               target="_blank"
             >
               Download Curriculum
             </a>
             <a
-              className="px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded hover:bg-blue-800"
+              className="px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded hover:bg-blue-800 transition-colors"
               href="https://calendly.com/alexrohleder/30min"
               target="_blank"
               rel="noopener"
