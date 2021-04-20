@@ -1,7 +1,8 @@
 {
-  "name": "portfolio",
+  "name": "alexrohleder.com",
   "version": "0.1.0",
-  "description": "Fancy Next.js app",
+  "description": "Alex's personal website",
+  "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "next build",

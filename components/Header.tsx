@@ -3,7 +3,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <header className="flex flex-col lg:flex-row gap-4">
-      <div className="bg-gray-300 rounded h-36 w-40 overflow-hidden">
+      <div className="rounded h-36 w-40 overflow-hidden">
         <Image
           priority
           width={144}
@@ -94,7 +94,7 @@ const Header = () => {
                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
               />
             </svg>
-            Trondheim, Norway (or remote)
+            Trondheim, Norway
           </div>
           <div className="flex gap-2 items-center">
             <svg
