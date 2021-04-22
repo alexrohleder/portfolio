@@ -13,13 +13,18 @@ const EducationSection = () => {
             Information Systems Bachelor Degree
           </a>
         </li>
-        <li>
+        <li className="mb-2">
           <a
             href="https://www.zend-zce.com/en/yellow-pages/ZEND029184"
             target="_blank"
             rel="noopener"
           >
             Certified PHP Engineer by ZEND
+          </a>
+        </li>
+        <li>
+          <a href="https://reactlive.nl/" target="_blank" rel="noopener">
+            Advanced React Patterns - React Live AMS
           </a>
         </li>
       </ul>
