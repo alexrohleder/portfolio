@@ -3,11 +3,12 @@ import Image from "next/image";
 const Header = () => {
   return (
     <header className="flex flex-col lg:flex-row gap-4">
-      <div className="rounded h-36 w-40 overflow-hidden">
+      <div className="h-36 w-36">
         <Image
           priority
           width={144}
           height={144}
+          className="rounded"
           alt="Alex Rohleder's profile picture"
           src="/profile.jpg"
         />
