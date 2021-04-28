@@ -3,7 +3,7 @@ import Section from "./Section";
 const ExternalLink = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-4 w-4 ml-2"
+    className="h-4 w-4 ml-2 inline"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -23,6 +23,7 @@ const EducationSection = () => {
       <ul className="list-disc">
         <li className="mb-2">
           <a
+            className="flex items-center"
             href="https://en.wikipedia.org/wiki/Bachelor_of_Information_Systems#:~:text=Bachelor%20of%20Information%20Systems%20is,covered%20in%20the%20study%20program.&text=A%20typical%20job%20gained%20after%20graduation%20is%20IT%20consulting."
             target="_blank"
             rel="noopener"
@@ -33,6 +34,7 @@ const EducationSection = () => {
         </li>
         <li className="mb-2">
           <a
+            className="flex items-center"
             href="https://www.zend-zce.com/en/yellow-pages/ZEND029184"
             target="_blank"
             rel="noopener"
@@ -42,7 +44,12 @@ const EducationSection = () => {
           </a>
         </li>
         <li>
-          <a href="https://reactlive.nl/" target="_blank" rel="noopener">
+          <a
+            className="flex items-center"
+            href="https://reactlive.nl/"
+            target="_blank"
+            rel="noopener"
+          >
             Advanced React Patterns - React Live AMS
             <ExternalLink />
           </a>

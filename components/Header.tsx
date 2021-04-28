@@ -3,7 +3,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <header className="flex flex-col lg:flex-row gap-4">
-      <div className="h-36 w-36">
+      <div className="h-36 w-44">
         <Image
           priority
           width={144}
@@ -37,7 +37,7 @@ const Header = () => {
             </a>
           </div>
         </div>
-        <div className="mt-24 grid lg:grid-rows-2 lg:mt-0 lg:grid-cols-3 gap-2 w-full">
+        <div className="mt-10 grid lg:grid-rows-2 lg:mt-0 lg:grid-cols-3 gap-2 w-full">
           <div className="flex gap-2 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
