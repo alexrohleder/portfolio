@@ -9,7 +9,7 @@ const ExperienceSection = () => {
     <Section title="Experience" subTitle={subTitle}>
       <div className="flex flex-col gap-8">
         <Experience
-          title="Software Engineer"
+          title="Software Engineer (Senior)"
           employeer="Sportradar"
           employeerWebsite="https://sportradar.com"
           startDate={new Date(2018, 2)}
@@ -40,7 +40,7 @@ const ExperienceSection = () => {
           ]}
         />
         <Experience
-          title="Software Engineer"
+          title="Software Engineer (Mid-level)"
           employeer="Meta"
           employeerWebsite="https://www.meta.com.br/"
           startDate={new Date(2016, 2)}
