@@ -21,7 +21,7 @@ const EducationSection = () => {
   return (
     <Section title="Education">
       <ul className="list-disc">
-        <li className="mb-2">
+        <li className="mb-4 lg:mb-2">
           <a
             className="flex items-center"
             href="https://en.wikipedia.org/wiki/Bachelor_of_Information_Systems#:~:text=Bachelor%20of%20Information%20Systems%20is,covered%20in%20the%20study%20program.&text=A%20typical%20job%20gained%20after%20graduation%20is%20IT%20consulting."
@@ -32,7 +32,7 @@ const EducationSection = () => {
             <ExternalLink />
           </a>
         </li>
-        <li className="mb-2">
+        <li className="mb-4 lg:mb-2">
           <a
             className="flex items-center"
             href="https://www.zend-zce.com/en/yellow-pages/ZEND029184"
@@ -50,11 +50,16 @@ const EducationSection = () => {
             target="_blank"
             rel="noopener"
           >
-            Advanced React Patterns - React Live AMS
+            Advanced Patterns - React Live AMS
             <ExternalLink />
           </a>
         </li>
       </ul>
+      <p className="mt-4 lg:mt-2 text-sm text-gray-500">
+        <a className="text-blue-700 hover:underline" href="/trainings">
+          Click here for a full list trainings and certifications
+        </a>
+      </p>
     </Section>
   );
 };
