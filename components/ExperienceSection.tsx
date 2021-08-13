@@ -51,7 +51,7 @@ const ExperienceSection = () => {
             "Was set as technical reference for PHP outsourcing projects",
             "Took responsibility at client's operation critical situations",
             "Was making deployment of features with business impact",
-            "Were involved in meetings with clients and sometimes traveled to meet them",
+            "Were involved in meetings with clients and sometimes travelled to meet them",
             "Worked in multiple projects and clients at same time, seamlessly doing context switch",
             "Got experience with big clients under the national market, such as Unimed",
           ]}

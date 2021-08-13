@@ -4,7 +4,7 @@ const SummarySection = () => {
   return (
     <Section title="Summary">
       <p className="mb-2">
-        Hey, I'm a brazilian who started coding with 15 and got his first job at
+        Hey, I'm a Brazilian who started coding with 15 and got his first job at
         19 years old, in 2015.
       </p>
       <p className="mb-2">
