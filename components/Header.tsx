@@ -1,32 +1,30 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className="flex flex-col lg:flex-row gap-4">
       <div className="h-36 w-44">
-        <Image
-          priority
-          width={144}
-          height={144}
-          className="rounded"
-          alt="Alex Rohleder's profile picture"
-          src="/profile.jpg"
-        />
+        <Link href="/">
+          <a>
+            <Image
+              priority
+              width={144}
+              height={144}
+              className="rounded"
+              alt="Alex Rohleder's profile picture"
+              src="/profile.jpg"
+            />
+          </a>
+        </Link>
       </div>
       <div className="flex flex-col w-full lg:h-36 lg:justify-between">
-        <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
-          <div className="w-full lg:w-auto">
+        <div className="w-full lg:w-auto flex justify-between items-center">
+          <div>
             <h1 className="text-4xl font-semibold">Alex Rohleder</h1>
             <h2 className="text-xl">Software Engineer</h2>
           </div>
-          <div className="flex gap-2">
-            <a
-              className="px-4 py-2 text-sm font-medium bg-gray-200 rounded hover:bg-gray-300 transition-colors"
-              href="/api/curriculum"
-              target="_blank"
-            >
-              Download Curriculum
-            </a>
+          <div>
             <a
               className="px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded hover:bg-blue-800 transition-colors"
               href="https://calendly.com/alexrohleder/30min"

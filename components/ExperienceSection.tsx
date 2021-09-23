@@ -16,12 +16,12 @@ const ExperienceSection = () => {
           location="Trondheim, Norway"
           summary="Sportradar is the world's leading sports data company, have clients like NHL, NBA, FIFA and NASCAR."
           highlights={[
-            "Works mainly in JavaScript, including one react app that generated direct revenue",
-            "Helps new employees with onboarding and technical doubts",
-            "Was set as security champion of 2 teams",
-            "Moved to a team with a tight deadline and managed to reach the goal",
-            "Created by it's own initiative a package that bundles common react components",
-            "Ideated and implemented at least 3 projects",
+            "Works with TypeScript and applied on real-time apps, scheduling apps and direct revenue apps",
+            "Created a few micro-frontends and the platform where they run",
+            "Was set as security champion of 2 teams and achieved great results in reducing vulnerabilities",
+            "Helps hiring, omboarding and solving technical doubts from new employees",
+            "Talks directly with product team to provide solutions",
+            "Interact with all development process, including setup and deploy of projects",
           ]}
         />
         <Experience
