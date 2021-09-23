@@ -10,7 +10,7 @@
     "build:static": "next build && next out"
   },
   "dependencies": {
-    "next": "^10.1.4-canary.7",
+    "next": "^11.1.2",
     "next-absolute-url": "^1.2.2",
     "next-seo": "^4.24.0",
     "preact": "^10.5.13",
