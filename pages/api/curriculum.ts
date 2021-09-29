@@ -1,9 +1,9 @@
-import { chromium } from "playwright";
+import playwright from "playwright-aws-lambda";
 import absoluteUrl from "next-absolute-url";
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  const browser = await chromium.launch();
+  const browser = await playwright.launchChromium();
   const page = await browser.newPage();
 
   // we only care about the width here, make sure it gets into 2xl
