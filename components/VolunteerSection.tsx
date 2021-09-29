@@ -15,7 +15,7 @@ const VolunteerSection = () => {
             Participated in presentations for more than 500 concurrent students
             where I was interviewed and used as a case study.
           </p>
-          <p className="font-sm text-blue-700">See more</p>
+          <p className="font-sm text-blue-700 print:hidden">See more</p>
         </a>
         <a
           href="/volunteer/coderace"
@@ -26,7 +26,7 @@ const VolunteerSection = () => {
             CODE RACE is the biggest hackaton in the shouthest state in Brazil.
             In one of their editions I had the opportunity to be a judge.
           </p>
-          <p className="font-sm text-blue-700">See more</p>
+          <p className="font-sm text-blue-700 print:hidden">See more</p>
         </a>
         <a
           href="/volunteer/software-development-teacher"
@@ -39,7 +39,7 @@ const VolunteerSection = () => {
             Teached how to code web apps to young students in small cities as
             part of a social program to give them more opportunities in life.
           </p>
-          <p className="font-sm text-blue-700">See more</p>
+          <p className="font-sm text-blue-700 print:hidden">See more</p>
         </a>
       </div>
     </Section>

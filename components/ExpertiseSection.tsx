@@ -11,7 +11,7 @@ const ExpertiseSection = () => {
       <Expertise label="TypeScript (5+ years)" value={100} />
       <Expertise label="PHP (5 years + certification)" value={70} />
       <Expertise label="React (3 years + courses)" value={90} />
-      <p className="mt-4 text-sm text-gray-500">
+      <p className="mt-4 text-sm text-gray-500 print:hidden">
         Didn't find the technology you are looking for?
         <br />
         <Link href="/expertise">

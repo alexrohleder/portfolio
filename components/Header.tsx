@@ -24,9 +24,17 @@ const Header = () => {
             <h1 className="text-4xl font-semibold">Alex Rohleder</h1>
             <h2 className="text-xl">Software Engineer</h2>
           </div>
-          <div>
+          <div className="flex gap-2">
             <a
-              className="px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded hover:bg-blue-800 transition-colors"
+              className="px-4 py-2 text-sm font-medium text-black bg-gray-300 rounded hover:bg-gray-400 transition-colors print:hidden"
+              href="/api/curriculum"
+              target="_blank"
+              rel="noopener"
+            >
+              Download Curriculum
+            </a>
+            <a
+              className="px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded hover:bg-blue-800 transition-colors print:hidden"
               href="https://calendly.com/alexrohleder/30min"
               target="_blank"
               rel="noopener"

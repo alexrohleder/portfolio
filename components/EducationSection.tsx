@@ -3,7 +3,7 @@ import Section from "./Section";
 const ExternalLink = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-4 w-4 ml-2 inline"
+    className="h-4 w-4 ml-2 inline print:hidden"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -28,7 +28,7 @@ const EducationSection = () => {
             target="_blank"
             rel="noopener"
           >
-            Information Systems Bachelor Degree
+            Information Systems BSc
             <ExternalLink />
           </a>
         </li>
@@ -56,7 +56,10 @@ const EducationSection = () => {
         </li>
       </ul>
       <p className="mt-4 lg:mt-2 text-sm text-gray-500">
-        <a className="text-blue-700 hover:underline" href="/trainings">
+        <a
+          className="text-blue-700 hover:underline print:hidden"
+          href="/trainings"
+        >
           Click here for a full list trainings and certifications
         </a>
       </p>

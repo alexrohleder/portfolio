@@ -3,13 +3,19 @@ import { DefaultSeo } from "next-seo";
 import seo from "../next-seo.config";
 import "tailwindcss/tailwind.css";
 import Header from "../components/Header";
+import { useRouter } from "next/dist/client/router";
 
 function App({ Component, pageProps }) {
+  const router = useRouter();
+
   return (
     <>
       <DefaultSeo {...seo} />
       <Head>
         <style>{`html{overflow-y:scroll}`}</style>
+        {router.asPath.endsWith("?screenshot") && (
+          <style>{`.print\\:hidden{display:none !important}`}</style>
+        )}
       </Head>
       <div className="min-h-screen flex flex-col justify-between">
         <main className="container mx-auto px-8 py-24">

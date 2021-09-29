@@ -1,3 +1,4 @@
+import Competence from "../components/Competence";
 import EducationSection from "../components/EducationSection";
 import ExperienceSection from "../components/ExperienceSection";
 import ExpertiseSection from "../components/ExpertiseSection";
