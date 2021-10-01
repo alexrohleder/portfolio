@@ -1,29 +1,32 @@
 import Head from "next/head";
 import { DefaultSeo } from "next-seo";
 import seo from "../next-seo.config";
-import "tailwindcss/tailwind.css";
 import Header from "../components/Header";
-import { useRouter } from "next/dist/client/router";
+import "tailwindcss/tailwind.css";
 
 function App({ Component, pageProps }) {
-  const router = useRouter();
-
   return (
     <>
       <DefaultSeo {...seo} />
       <Head>
         <style>{`html{overflow-y:scroll}`}</style>
-        {router.asPath.endsWith("?screenshot") && (
-          <style>{`.print\\:hidden{display:none !important}`}</style>
-        )}
       </Head>
       <div className="min-h-screen flex flex-col justify-between">
-        <main className="container mx-auto px-8 py-24">
+        <main className="container mx-auto px-8 py-24 print:max-w-full print:p-12">
           <Header />
           <Component {...pageProps} />
         </main>
-        <footer className="py-16 text-center">
-          <p>Made with ❤️ by Alex Rohleder</p>
+        <footer className="p-12 text-center">
+          <p>
+            Made with <span className="text-red-700">❤️</span> by Alex Rohleder
+          </p>
+          <p className="hidden print:block">
+            Visit{" "}
+            <a className="text-blue-700" href="">
+              alexrohleder.com
+            </a>{" "}
+            for more info.
+          </p>
         </footer>
       </div>
     </>
