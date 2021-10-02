@@ -1,21 +1,28 @@
 import EducationSection from "../components/EducationSection";
 import ExperienceSection from "../components/ExperienceSection";
 import ExpertiseSection from "../components/ExpertiseSection";
+import LanguagesSection from "../components/LanguagesSection";
+import Section from "../components/Section";
 import SummarySection from "../components/SummarySection";
-import VolunteerSection from "../components/VolunteerSection";
+import WhatSetsMeApartSection from "../components/WhatSetsMeApartSection";
 
 const Index = () => (
-  <div className="mt-10 grid gap-4 lg:grid-cols-3 xl:grid-cols-4">
-    <div className="lg:col-span-3 xl:col-span-4 lg:mb-6">
-      <SummarySection />
-    </div>
-    <div className="lg:col-span-2 xl:col-span-3">
-      <ExperienceSection />
-    </div>
-    <div className="flex flex-col gap-10">
-      <EducationSection />
-      <ExpertiseSection />
-      <VolunteerSection />
+  <div className="flex flex-col gap-12">
+    <SummarySection />
+    <div className="grid gap-6 lg:grid-cols-3 xl:grid-cols-4 print:grid-cols-1 print:gap-12">
+      <div className="flex flex-col gap-12 lg:col-span-2 xl:col-span-3">
+        <ExperienceSection />
+        <WhatSetsMeApartSection />
+      </div>
+      <div className="flex flex-col gap-12 print:flex-row">
+        <div className="print:flex-1">
+          <ExpertiseSection />
+        </div>
+        <div className="print:flex-1 flex flex-col gap-12">
+          <EducationSection />
+          <LanguagesSection />
+        </div>
+      </div>
     </div>
   </div>
 );

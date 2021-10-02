@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="flex flex-col lg:flex-row gap-4">
+    <header className="flex flex-col lg:flex-row gap-8">
       <div className="h-36 w-44">
         <Link href="/">
           <a>
@@ -18,11 +18,16 @@ const Header = () => {
           </a>
         </Link>
       </div>
-      <div className="flex flex-col w-full lg:h-36 lg:justify-between">
-        <div className="w-full lg:w-auto flex justify-between items-center">
+      <div className="flex flex-col w-full gap-8 lg:gap-4 lg:h-36 lg:justify-between">
+        <div className="w-full flex flex-col gap-8 justify-between lg:items-center lg:flex-row">
           <div>
             <h1 className="text-4xl font-semibold">Alex Rohleder</h1>
-            <h2 className="text-xl">Software Engineer</h2>
+            <h2 className="text-xl">
+              Frontend software engineer{" "}
+              <span className="hidden lg:inline">
+                with 6 years of experience
+              </span>
+            </h2>
           </div>
           <div className="flex gap-2 print:hidden">
             <a
@@ -43,7 +48,7 @@ const Header = () => {
             </a>
           </div>
         </div>
-        <div className="mt-10 grid lg:grid-rows-2 lg:mt-0 lg:grid-cols-3 gap-2 w-full">
+        <div className="grid lg:grid-rows-2 lg:mt-0 lg:grid-cols-3 gap-2 w-full">
           <div className="flex gap-2 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"

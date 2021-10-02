@@ -32,17 +32,6 @@ const EducationSection = () => {
             <ExternalLink />
           </a>
         </li>
-        <li className="mb-4 lg:mb-2">
-          <a
-            className="flex items-center"
-            href="https://www.zend-zce.com/en/yellow-pages/ZEND029184"
-            target="_blank"
-            rel="noopener"
-          >
-            Certified PHP Engineer by ZEND
-            <ExternalLink />
-          </a>
-        </li>
         <li>
           <a
             className="flex items-center"
@@ -62,6 +51,9 @@ const EducationSection = () => {
         >
           Click here for a full list trainings and certifications
         </a>
+        <span className="hidden print:block">
+          And more trainings and certifications...
+        </span>
       </p>
     </Section>
   );

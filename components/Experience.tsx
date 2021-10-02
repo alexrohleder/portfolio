@@ -1,3 +1,5 @@
+import timeDiff from "timediff";
+
 type Props = {
   title: string;
   employeer: string;
@@ -18,11 +20,15 @@ const Experience = (props: Props) => {
     );
   };
 
+  const getWorkedTime = () => {
+    const diff = timeDiff(props.startDate, props.endDate || new Date(), "YM");
+
+    return `${diff.years} yrs ${diff.months} mos`;
+  };
+
   return (
     <article>
-      <h1 className="font-semibold">{props.title}</h1>
-
-      <h2 className="font-semibold">
+      <h1 className="font-semibold">
         <a
           className="text-blue-700 hover:underline"
           href={props.employeerWebsite}
@@ -31,7 +37,9 @@ const Experience = (props: Props) => {
         >
           {props.employeer}
         </a>
-      </h2>
+        {" - "}
+        {props.title}
+      </h1>
 
       <div className="flex gap-4 text-gray-500 text-sm mt-1">
         <div className="flex items-center gap-2">
@@ -51,7 +59,8 @@ const Experience = (props: Props) => {
           </svg>
           <div>
             {getFormattedDate(props.startDate)} -{" "}
-            {props.endDate ? getFormattedDate(props.endDate) : "Ongoing"}
+            {props.endDate ? getFormattedDate(props.endDate) : "Ongoing"} ·{" "}
+            {getWorkedTime()}
           </div>
         </div>
         <div className="flex items-center gap-2">
@@ -79,13 +88,13 @@ const Experience = (props: Props) => {
         </div>
       </div>
       <p className="my-4">{props.summary}</p>
-      <ul className="list-disc mt-2">
-        {props.highlights.map((highlight) => (
-          <li className="mb-2" key={highlight}>
+      <ol className="list-disc mt-2">
+        {props.highlights.map((highlight, index) => (
+          <li className="mb-2" key={index}>
             {highlight};
           </li>
         ))}
-      </ul>
+      </ol>
     </article>
   );
 };

@@ -1,7 +1,7 @@
 const NotFound = () => {
   return (
     <>
-      <hr className="h-px bg-gray-300 w-full my-12" />
+      <hr className="h-px bg-gray-300 w-full" />
       <div className="text-center">
         <h1 className="font-semibold text-xl">404 NOT FOUND</h1>
         <p className="my-4">

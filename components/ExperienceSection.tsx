@@ -7,7 +7,7 @@ const ExperienceSection = () => {
 
   return (
     <Section title="Experience" subTitle={subTitle}>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-6">
         <Experience
           title="Software Engineer (Senior)"
           employeer="Sportradar"
@@ -16,27 +16,10 @@ const ExperienceSection = () => {
           location="Trondheim, Norway"
           summary="Sportradar is the world's leading sports data company, have clients like NHL, NBA, FIFA and NASCAR."
           highlights={[
-            "Works with TypeScript and applied on real-time apps, scheduling apps and direct revenue apps",
-            "Created a few micro-frontends and the platform where they run",
-            "Was set as security champion of 2 teams and achieved great results in reducing vulnerabilities",
-            "Helps hiring, omboarding and solving technical doubts from new employees",
-            "Talks directly with product team to provide solutions",
-            "Interact with all development process, including setup and deploy of projects",
-          ]}
-        />
-        <Experience
-          title="Software Engineer (Contractor)"
-          employeer="Syntesis"
-          employeerWebsite="https://syntesis.it/"
-          startDate={new Date(2018, 0)}
-          endDate={new Date(2018, 2)}
-          location="Santa Maria, Brazil"
-          summary="Syntesis created SYNSUITE, an software capable to manage businesses in almost every aspect."
-          highlights={[
-            "Worked on the migration and installation of their own hosted Gitlab instance",
-            "Implanted a new development workflow that enabled them to build faster",
-            "Ported their system to work within docker containers",
-            "Created deployment pipelines allowing them to do seamless atomic deployments",
+            "Improved DX for micro-frontend teams. For example, the build times were reduced by an avg. of 70%", // talk about micro-frontends and platform setup
+            "Reduced by 87% the number of software vulnerabilities over two teams, either by triage or by development advising", // talk about security champion responsibilities
+            "Resolves performance issues on applications with high level of data updates or high amount of data", // talk about performance problems we solved
+            "Support hiring, onboarding and mentoring new employees", // talk about hiring, hook to talk about mentoring
           ]}
         />
         <Experience
@@ -46,16 +29,17 @@ const ExperienceSection = () => {
           startDate={new Date(2016, 2)}
           endDate={new Date(2018, 0)}
           location="Recanto Maestro, Brazil"
-          summary="Meta is an international IT outsourcing enterprise operating a software factory that is listed as one of the leaders in Brazil."
+          summary="Meta is an international IT outsourcing enterprise, have clients like Sascar, Unimed and O Boticário."
           highlights={[
-            "Was set as technical reference for PHP outsourcing projects",
-            "Took responsibility at client's operation critical situations",
-            "Was making deployment of features with business impact",
-            "Were involved in meetings with clients and sometimes travelled to meet them",
-            "Worked in multiple projects and clients at same time, seamlessly doing context switch",
-            "Got experience with big clients under the national market, such as Unimed",
+            "Responsible for deployments of applications that could have a severe business impact if there was a downtime",
+            "Worked with different development methodologies, as clients may use different variations of Scrum or other methods",
+            "Helped on architecting and kick-starting projects. Was set as technical reference for PHP outsourcing",
+            "Represented the company in conversations with clients, helping them to solve problems and taking decisions over technical aspects",
           ]}
         />
+        <p className="text-sm text-gray-500">
+          There is three working experiences that are not listed.
+        </p>
       </div>
     </Section>
   );

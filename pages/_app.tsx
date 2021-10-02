@@ -12,7 +12,7 @@ function App({ Component, pageProps }) {
         <style>{`html{overflow-y:scroll}`}</style>
       </Head>
       <div className="min-h-screen flex flex-col justify-between">
-        <main className="container mx-auto px-8 py-24 print:max-w-full print:p-12">
+        <main className="container mx-auto flex flex-col gap-12 px-8 py-24 print:max-w-full print:p-12">
           <Header />
           <Component {...pageProps} />
         </main>
