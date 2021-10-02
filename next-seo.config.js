@@ -1,5 +1,5 @@
 const description =
-  "Frontend software engineer with 5+ years of experience and pasionate about building high-impact, well-performing user experiences.";
+  "Frontend software engineer with 5+ years of experience and passion for building high-impact, well-performing user experiences.";
 
 export default {
   title: "Alex Rohleder - Frontend Software Engineer",
