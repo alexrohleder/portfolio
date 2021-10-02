@@ -7,15 +7,7 @@ const SummarySection = () => {
       <div className="flex flex-col gap-2">
         <p className="flex items-center gap-1">
           Hey! I'm a Brazilian who is pasionate about building high-impact,
-          well-performing user experiences
-          <div className="w-4 h-4 overflow-hidden">
-            <Image
-              src="/star-struck.png"
-              alt="Grinning Face with Star Eyes"
-              width={16}
-              height={16}
-            />
-          </div>
+          well-performing user experiences.
         </p>
         <p>
           I believe that work is a big portion of my day, so I try to make the
