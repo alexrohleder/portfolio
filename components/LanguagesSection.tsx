@@ -14,7 +14,7 @@ const LanguagesSection = () => (
       </div>
       <div className="grid grid-cols-4 gap-8">
         <div>Spanish</div>
-        <div className="text-right italic">B1</div>
+        <div className="text-right italic">A2</div>
         <div>Norwegian</div>
         <div className="text-right italic">A2</div>
       </div>
