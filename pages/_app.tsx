@@ -22,8 +22,12 @@ function App({ Component, pageProps }) {
           </p>
           <p className="hidden print:block">
             Visit{" "}
-            <a className="text-blue-700" href="https://alexrohleder.com">
-              alexrohleder.com
+            <a
+              className="text-blue-700"
+              href="https://alexrohleder.com/expertise"
+              target="_blank"
+            >
+              alexrohleder.com/expertise
             </a>{" "}
             for more info.
           </p>

@@ -7,8 +7,8 @@ const WhatSetsMeApartSection = () => (
         I demonstrate strong performance so <b>colleagues can rely upon me</b>.
       </li>
       <li className="mb-2">
-        I'm <b>self-motivated</b> with a passion for front-end technology and
-        experiences.
+        I'm <b>self-motivated</b> with a <b>passion for learning</b> and using
+        front-end technology.
       </li>
       <li>
         I'm a <b>systems thinker</b> who can reason through systems and{" "}
