@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Section from "./Section";
 
 const SummarySection = () => {
@@ -14,24 +13,8 @@ const SummarySection = () => {
           best out of it for me and my colleagues.
         </p>
         <p>
-          <a
-            className="text-blue-700 hover:underline"
-            href="https://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/"
-            target="_blank"
-            rel="noopener"
-          >
-            On being a senior engineer
-          </a>{" "}
-          is an article from{" "}
-          <a
-            className="text-blue-700 hover:underline"
-            href="https://www.kitchensoap.com/"
-            target="_blank"
-            rel="noopener"
-          >
-            Kitchen Soap
-          </a>{" "}
-          that I like and use as guidance.
+          To achieve that I focus on empaty during conversations and try to
+          deliver something I'm happy with.
         </p>
       </div>
     </Section>

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="flex flex-col lg:flex-row gap-8">
       <div className="h-36 w-44">
-        <Link href="/">
+        <Link href="https://alexrohleder.com">
           <a>
             <Image
               priority

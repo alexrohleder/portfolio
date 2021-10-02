@@ -16,10 +16,10 @@ const ExperienceSection = () => {
           location="Trondheim, Norway"
           summary="Sportradar is the world's leading sports data company, have clients like NHL, NBA, FIFA and NASCAR."
           highlights={[
-            "Improved DX for micro-frontend teams. For example, the build times were reduced by an avg. of 70%", // talk about micro-frontends and platform setup
+            "Improved DX for micro-frontend teams. One of the achieved results was a reduction of avg. 70% in build times", // talk about micro-frontends and platform setup
             "Reduced by 87% the number of software vulnerabilities over two teams, either by triage or by development advising", // talk about security champion responsibilities
             "Resolves performance issues on applications with high level of data updates or high amount of data", // talk about performance problems we solved
-            "Support hiring, onboarding and mentoring new employees", // talk about hiring, hook to talk about mentoring
+            "Supports hiring, onboarding and mentoring new employees", // talk about hiring, hook to talk about mentoring
           ]}
         />
         <Experience
@@ -31,10 +31,10 @@ const ExperienceSection = () => {
           location="Recanto Maestro, Brazil"
           summary="Meta is an international IT outsourcing enterprise, have clients like Sascar, Unimed and O Boticário."
           highlights={[
-            "Responsible for deployments of applications that could have a severe business impact if there was a downtime",
-            "Worked with different development methodologies, as clients may use different variations of Scrum or other methods",
-            "Helped on architecting and kick-starting projects. Was set as technical reference for PHP outsourcing",
-            "Represented the company in conversations with clients, helping them to solve problems and taking decisions over technical aspects",
+            "Responsible for deployments of critical applications that would lead to severe impact to business in case of downtimes",
+            "Worked with different development methodologies, such as Scrum and variations, accordingly with clients choice",
+            "Nominated as the technical reference for PHP outsourcing, helped on architecting and kick-starting multiple projects",
+            "Represented the company in conversations with clients, understanding their problems and taking technical decisions to solve them",
           ]}
         />
         <p className="text-sm text-gray-500">
