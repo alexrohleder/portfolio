@@ -24,6 +24,7 @@ const SummarySection = () => {
             className="text-blue-700 hover:underline"
             href="https://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/"
             target="_blank"
+            rel="noopener"
           >
             On being a senior engineer
           </a>{" "}
@@ -32,6 +33,7 @@ const SummarySection = () => {
             className="text-blue-700 hover:underline"
             href="https://www.kitchensoap.com/"
             target="_blank"
+            rel="noopener"
           >
             Kitchen Soap
           </a>{" "}

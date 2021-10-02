@@ -22,7 +22,7 @@ function App({ Component, pageProps }) {
           </p>
           <p className="hidden print:block">
             Visit{" "}
-            <a className="text-blue-700" href="">
+            <a className="text-blue-700" href="https://alexrohleder.com">
               alexrohleder.com
             </a>{" "}
             for more info.
