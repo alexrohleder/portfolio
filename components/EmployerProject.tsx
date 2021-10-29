@@ -1,33 +1,22 @@
 import getFormattedDate from "../lib/getFormattedDate";
 import getWorkedTime from "../lib/getWorkedTime";
 
-type Props = {
+export type Props = {
   title: string;
   employeer: string;
   employeerWebsite: string;
+  client?: string;
+  clientWebsite?: string;
   startDate: Date;
   endDate?: Date;
-  location: string;
-  summary: string;
-  highlights: string[];
+  description?: string;
+  highlights?: string[];
 };
 
-const Experience = (props: Props) => {
+const EmployerProject = (props: Props) => {
   return (
     <article>
-      <h1 className="font-semibold">
-        <a
-          className="text-blue-700 hover:underline"
-          href={props.employeerWebsite}
-          target="_blank"
-          rel="noopener"
-        >
-          {props.employeer}
-        </a>
-        {" - "}
-        {props.title}
-      </h1>
-
+      <h1 className="font-semibold">{props.title}</h1>
       <div className="flex flex-col gap-2 lg:gap-4 text-gray-500 text-sm mt-1 lg:flex-row">
         <div className="flex items-center gap-2">
           <svg
@@ -61,29 +50,47 @@ const Experience = (props: Props) => {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={1}
-              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-            />
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1}
-              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              strokeWidth={2}
+              d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
             />
           </svg>
-          <div>{props.location}</div>
+          <div>
+            <a
+              className="text-blue-700 hover:underline font-semibold"
+              href={props.employeerWebsite}
+              target="_blank"
+              rel="noopener"
+            >
+              {props.employeer}
+            </a>
+            {props.client && (
+              <>
+                {" consulting for "}
+                <a
+                  className="text-blue-700 hover:underline font-semibold"
+                  href={props.clientWebsite}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {props.client}
+                </a>
+              </>
+            )}
+          </div>
         </div>
       </div>
-      <p className="my-4">{props.summary}</p>
-      <ol className="list-disc mt-2">
-        {props.highlights.map((highlight, index) => (
-          <li className="mb-2" key={index}>
-            {highlight};
-          </li>
-        ))}
-      </ol>
+      {props.description && <p className="my-4">{props.description}.</p>}
+      {props.highlights && (
+        <ol className="my-4 list-disc">
+          {props.highlights.map((highlight, index) => (
+            <li className="mb-2" key={index}>
+              {highlight};
+            </li>
+          ))}
+        </ol>
+      )}
     </article>
   );
 };
 
-export default Experience;
+export default EmployerProject;

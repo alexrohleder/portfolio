@@ -2,7 +2,7 @@ import EducationSection from "../components/EducationSection";
 import ExperienceSection from "../components/ExperienceSection";
 import ExpertiseSection from "../components/ExpertiseSection";
 import LanguagesSection from "../components/LanguagesSection";
-import Section from "../components/Section";
+import ProjectsSection from "../components/ProjectsSection";
 import SummarySection from "../components/SummarySection";
 import WhatSetsMeApartSection from "../components/WhatSetsMeApartSection";
 
@@ -24,6 +24,16 @@ const Index = () => (
         </div>
       </div>
     </div>
+    <div className="h-px border border-dashed print:hidden" />
+    <div className="hidden print:block" />
+    <div className="hidden print:block" />
+    <div className="hidden print:block" />
+    <div className="hidden print:block" />
+    <div className="hidden print:block" />
+    <div className="hidden print:block" />
+    <div className="hidden print:block" />
+    <div className="hidden print:block" />
+    <ProjectsSection />
   </div>
 );
 

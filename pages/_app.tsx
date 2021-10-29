@@ -9,7 +9,11 @@ function App({ Component, pageProps }) {
     <>
       <DefaultSeo {...seo} />
       <Head>
-        <style>{`html{overflow-y:scroll}`}</style>
+        <style>{`html{overflow-y:scroll} @media screen {
+            .page {
+                page-break-before: always !important;
+            }
+        }`}</style>
       </Head>
       <div className="min-h-screen flex flex-col justify-between">
         <main className="container mx-auto flex flex-col gap-12 px-8 py-24 print:max-w-full print:p-12">
