@@ -131,7 +131,7 @@ const projects: Projects[] = [
       startDate: new Date(2017, 6),
       endDate: new Date(2018, 0),
       description:
-        "Augmenting the existing automated phone menu system with PHP and Java",
+        "Improving the existing automated phone menu system with PHP and Java",
     },
   },
   {
@@ -167,7 +167,7 @@ const projects: Projects[] = [
 const ProjectsSection = () => {
   return (
     <Section title="Projects">
-      <div className="grid xl:grid-cols-2 gap-6">
+      <div className="grid xl:grid-cols-2 gap-6 print:gap-4">
         {projects.map((project) =>
           project.type === "employer" ? (
             <EmployerProject key={project.data.title} {...project.data} />

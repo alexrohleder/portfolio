@@ -20,7 +20,7 @@ function App({ Component, pageProps }) {
           <Header />
           <Component {...pageProps} />
         </main>
-        <footer className="p-12 text-center">
+        <footer className="p-12 text-center print:hidden">
           <p>
             Made with <span className="text-red-700">❤️</span> by Alex Rohleder
           </p>
