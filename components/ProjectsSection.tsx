@@ -22,7 +22,7 @@ const projects: Projects[] = [
         "Single page frontend built with TypeScript, React, Import-Maps and Webpack",
         "Able to load different apps into a single interface and bridge their communication",
         "There is a huge side of CLI tooling and webpack configuration",
-        "Developer experience is critical, this is the platform to build apps fo",
+        "Developer experience is critical, this is the platform to build apps for",
       ],
     },
   },
