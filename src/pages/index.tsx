@@ -2,6 +2,7 @@ import BaseHeader from "../components/BaseHeader";
 import EducationSection from "../components/sections/EducationSection";
 import ExperienceSection from "../components/sections/ExperienceSection";
 import LanguagesSection from "../components/sections/LanguagesSection";
+import ProjectsSection from "../components/sections/ProjectsSection";
 import ReferencesSection from "../components/sections/ReferencesSection";
 import SummarySection from "../components/sections/SummarySection";
 import TopSkillsSection from "../components/sections/TopSkillsSection";
@@ -31,7 +32,7 @@ export default function Home() {
         </div>
       </div>
       <div className="container mx-auto p-8 print:h-[297mm] print:w-[210mm]">
-        page 2
+        <ProjectsSection />
       </div>
       <div className="container mx-auto p-8 print:h-[296mm] print:w-[210mm]">
         page 3

@@ -1,4 +1,4 @@
-import { BriefcaseIcon, LocationMarkerIcon } from "@heroicons/react/outline";
+import { CalendarIcon, LocationMarkerIcon } from "@heroicons/react/outline";
 import getFormattedDate from "../../lib/getFormattedDate";
 import getWorkedTime from "../../lib/getWorkedTime";
 
@@ -21,7 +21,7 @@ function ExperienceBlock(props: Props) {
           className="text-blue-700 hover:underline"
           href={props.employeerWebsite}
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           {props.employeer}
         </a>
@@ -30,7 +30,7 @@ function ExperienceBlock(props: Props) {
       </h1>
       <div className="flex flex-col gap-2 text-gray-500 text-sm mt-1 lgp:gap-4 lgp:flex-row">
         <div className="flex items-center gap-2">
-          <BriefcaseIcon className="h-4 w-4" />
+          <CalendarIcon className="h-4 w-4" />
           <div>
             {getFormattedDate(props.startDate)} -{" "}
             {props.endDate ? getFormattedDate(props.endDate) : "Ongoing"} ·{" "}

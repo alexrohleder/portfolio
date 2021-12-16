@@ -50,6 +50,7 @@ function EducationSection() {
           </a>
         </li>
       </ul>
+      <p className="text-gray-500 text-sm">And more...</p>
     </BaseSection>
   );
 }
