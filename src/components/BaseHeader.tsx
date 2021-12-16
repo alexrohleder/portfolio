@@ -25,14 +25,32 @@ function BaseHeader() {
         </Link>
       </div>
       <div className="flex flex-col gap-8 print:gap-0 lg:gap-4 lgp:flex-1 lgp:h-36 lgp:justify-between">
-        <div>
-          <h1 className="text-4xl font-semibold">Alex Rohleder</h1>
-          <h2 className="text-xl">
-            Software engineer{" "}
-            <span className="hidden lgp:inline">
-              with 6 years of experience
-            </span>
-          </h2>
+        <div className="w-full flex flex-col gap-8 justify-between lg:items-center lg:flex-row">
+          <div>
+            <h1 className="text-4xl font-semibold">Alex Rohleder</h1>
+            <h2 className="text-xl">
+              Software engineer{" "}
+              <span className="hidden lgp:inline">
+                with 6 years of experience
+              </span>
+            </h2>
+          </div>
+          <div className="flex gap-2 print:hidden">
+            <button
+              className="px-4 py-2 text-sm font-medium text-black bg-gray-300 rounded hover:bg-gray-400 transition-colors"
+              onClick={() => window.print()}
+            >
+              Download Curriculum
+            </button>
+            <a
+              className="px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded hover:bg-blue-800 transition-colors"
+              href="https://calendly.com/alexrohleder/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Schedule a meeting
+            </a>
+          </div>
         </div>
         <div className="grid gap-2 print:gap-0 print:grid-rows-3 print:grid-cols-2 lg:grid-rows-2 lg:grid-cols-3">
           <div className="flex gap-2 items-center">
