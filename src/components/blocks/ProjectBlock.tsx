@@ -14,7 +14,7 @@ type Props = {
   highlights?: string[];
 };
 
-const ProjectBlock = (props: Props) => {
+function ProjectBlock(props: Props) {
   return (
     <article>
       <h1 className="font-semibold">{props.title}</h1>
@@ -54,11 +54,11 @@ const ProjectBlock = (props: Props) => {
           </div>
         </div>
       </div>
-      {props.description && <p className="my-4">{props.description}.</p>}
+      {props.description && <p className="my-2">{props.description}.</p>}
       {props.highlights && (
-        <ol className="my-4 list-disc">
+        <ol className="my-2 list-disc">
           {props.highlights.map((highlight, index) => (
-            <li className="mb-2" key={index}>
+            <li className="mb-2 print:mb-0" key={index}>
               {highlight};
             </li>
           ))}
@@ -66,6 +66,6 @@ const ProjectBlock = (props: Props) => {
       )}
     </article>
   );
-};
+}
 
 export default ProjectBlock;
