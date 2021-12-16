@@ -10,7 +10,7 @@ import {
 function BaseHeader() {
   return (
     <header className="flex flex-col gap-8 lgp:flex-row">
-      <div className="h-40 w-40 lg:h-36 lg:w-36">
+      <div className="h-36 w-36">
         <Link href="/">
           <a>
             <Image
@@ -24,7 +24,7 @@ function BaseHeader() {
           </a>
         </Link>
       </div>
-      <div className="flex flex-col gap-8 print:gap-0 lg:gap-4 lgp:flex-1 print:h-40 lg:h-36 lgp:justify-between">
+      <div className="flex flex-col gap-8 print:gap-0 lg:gap-4 lgp:flex-1 lgp:h-36 lgp:justify-between">
         <div>
           <h1 className="text-4xl font-semibold">Alex Rohleder</h1>
           <h2 className="text-xl">
@@ -34,7 +34,7 @@ function BaseHeader() {
             </span>
           </h2>
         </div>
-        <div className="grid gap-2 print:gap-1 print:grid-rows-3 print:grid-cols-2 lg:grid-rows-2 lg:grid-cols-3">
+        <div className="grid gap-2 print:gap-0 print:grid-rows-3 print:grid-cols-2 lg:grid-rows-2 lg:grid-cols-3">
           <div className="flex gap-2 items-center">
             <PhoneIcon className="h-4 w-4" stroke="currentColor" />
             <a href="tel:+4741244953">+47 412 44 953</a>

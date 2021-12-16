@@ -3,7 +3,7 @@ import BaseSection from "../BaseSection";
 
 function ExperienceSection() {
   const years = new Date().getFullYear() - 2016;
-  const subTitle = `${years} years as full-time and 1 year as intern.`;
+  const subTitle = `${years} years as full-time and 1 year as intern — there are unlisted working experiences.`;
 
   return (
     <BaseSection title="Experience" subTitle={subTitle}>
@@ -37,9 +37,6 @@ function ExperienceSection() {
             "Represented the company in client conversations, taking technical decisions to solve their problems",
           ]}
         />
-        <p className="text-sm text-gray-500">
-          There are three unlisted working experiences.
-        </p>
       </div>
     </BaseSection>
   );

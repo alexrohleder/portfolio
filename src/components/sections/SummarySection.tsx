@@ -3,8 +3,8 @@ import BaseSection from "../BaseSection";
 function SummarySection() {
   return (
     <BaseSection title="Summary">
-      <div className="flex flex-col gap-2">
-        <p className="flex items-center gap-1">
+      <div className="flex flex-col gap-2 print:gap-0">
+        <p>
           Hey! I'm a Brazilian who is passionate about building high-impact,
           well-performing user experiences.
         </p>

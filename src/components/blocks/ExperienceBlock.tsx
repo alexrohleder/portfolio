@@ -28,7 +28,6 @@ function ExperienceBlock(props: Props) {
         {" - "}
         {props.title}
       </h1>
-
       <div className="flex flex-col gap-2 text-gray-500 text-sm mt-1 lgp:gap-4 lgp:flex-row">
         <div className="flex items-center gap-2">
           <BriefcaseIcon className="h-4 w-4" />
@@ -43,10 +42,10 @@ function ExperienceBlock(props: Props) {
           <div>{props.location}</div>
         </div>
       </div>
-      <p className="my-4">{props.summary}</p>
-      <ol className="list-disc mt-2">
+      <p className="my-2">{props.summary}</p>
+      <ol className="list-disc">
         {props.highlights.map((highlight, index) => (
-          <li className="mb-2" key={index}>
+          <li className="mb-2 print:mb-0" key={index}>
             {highlight};
           </li>
         ))}
