@@ -1,4 +1,5 @@
 import BaseHeader from "../components/BaseHeader";
+import EducationSection from "../components/sections/EducationSection";
 import ExperienceSection from "../components/sections/ExperienceSection";
 import LanguagesSection from "../components/sections/LanguagesSection";
 import SummarySection from "../components/sections/SummarySection";
@@ -17,11 +18,12 @@ export default function Home() {
             <WhatSetsMeApartSection />
           </div>
           <div className="flex flex-col gap-8 print:flex-row">
-            <div className="print:flex-1">
+            <div className="flex flex-col gap-8 print:flex-1">
               <TopSkillsSection />
             </div>
-            <div className="print:flex-1">
+            <div className="flex flex-col gap-8 print:flex-1">
               <LanguagesSection />
+              <EducationSection />
             </div>
           </div>
         </div>
