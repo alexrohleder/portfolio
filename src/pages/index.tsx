@@ -1,5 +1,6 @@
 import BaseHeader from "../components/BaseHeader";
 import ExperienceSection from "../components/sections/ExperienceSection";
+import LanguagesSection from "../components/sections/LanguagesSection";
 import SummarySection from "../components/sections/SummarySection";
 import WhatSetsMeApartSection from "../components/sections/WhatSetsMeApartSection";
 
@@ -14,7 +15,9 @@ export default function Home() {
             <ExperienceSection />
             <WhatSetsMeApartSection />
           </div>
-          <div className="flex flex-col gap-8 print:flex-row">aside</div>
+          <div className="flex flex-col gap-8 print:flex-row">
+            <LanguagesSection />
+          </div>
         </div>
       </div>
       <div className="container mx-auto p-8 print:h-[297mm] print:w-[210mm]">
