@@ -54,7 +54,7 @@ function BaseHeader() {
             <a
               href="https://linkedin.com/in/alexrohleder"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               linkedin.com/in/alexrohleder
             </a>
@@ -64,7 +64,7 @@ function BaseHeader() {
             <a
               href="https://twitter.com/alexrohleder"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               twitter.com/alexrohleder
             </a>
@@ -74,7 +74,7 @@ function BaseHeader() {
             <a
               href="https://github.com/alexrohleder"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               github.com/alexrohleder
             </a>

@@ -5,6 +5,8 @@ class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
+          {/* we need to include this way because 'media="print"' attribute. */}
+          {/* eslint-disable-next-line @next/next/no-css-tags */}
           <link
             rel="stylesheet"
             type="text/css"
