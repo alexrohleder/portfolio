@@ -7,7 +7,7 @@ function ExperienceSection() {
 
   return (
     <BaseSection title="Experience" subTitle={subTitle}>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-4">
         <ExperienceBlock
           title="Software Engineer (Senior)"
           employeer="Sportradar"
@@ -38,7 +38,7 @@ function ExperienceSection() {
           ]}
         />
         <p className="text-sm text-gray-500">
-          There is three working experiences that are not listed.
+          There are three unlisted working experiences.
         </p>
       </div>
     </BaseSection>
