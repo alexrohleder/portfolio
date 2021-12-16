@@ -5,7 +5,7 @@ const LanguagesSection = () => (
     title="Languages"
     subTitle="Based on CEFR language proficiency levels"
   >
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col">
       <div className="grid grid-cols-4 gap-8">
         <div>Portuguese</div>
         <div className="text-right italic">Native</div>

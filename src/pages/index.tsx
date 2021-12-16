@@ -2,6 +2,7 @@ import BaseHeader from "../components/BaseHeader";
 import ExperienceSection from "../components/sections/ExperienceSection";
 import LanguagesSection from "../components/sections/LanguagesSection";
 import SummarySection from "../components/sections/SummarySection";
+import TopSkillsSection from "../components/sections/TopSkillsSection";
 import WhatSetsMeApartSection from "../components/sections/WhatSetsMeApartSection";
 
 export default function Home() {
@@ -16,7 +17,12 @@ export default function Home() {
             <WhatSetsMeApartSection />
           </div>
           <div className="flex flex-col gap-8 print:flex-row">
-            <LanguagesSection />
+            <div className="print:flex-1">
+              <TopSkillsSection />
+            </div>
+            <div className="print:flex-1">
+              <LanguagesSection />
+            </div>
           </div>
         </div>
       </div>
