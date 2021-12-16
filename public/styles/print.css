@@ -3,8 +3,7 @@
   margin: 0;
 }
 
-html body {
-  background: white;
-  font-size: 12pt;
+html {
+  font-size: 10pt;
   line-height: 1.3;
 }
