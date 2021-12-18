@@ -5,7 +5,6 @@ import ExperienceSection from "../components/sections/ExperienceSection";
 import LanguagesSection from "../components/sections/LanguagesSection";
 import OpenSourceSection from "../components/sections/OpenSourceSection";
 import ProjectsSection from "../components/sections/ProjectsSection";
-import ReferencesSection from "../components/sections/ReferencesSection";
 import SummarySection from "../components/sections/SummarySection";
 import TopSkillsSection from "../components/sections/TopSkillsSection";
 import WhatSetsMeApartSection from "../components/sections/WhatSetsMeApartSection";
@@ -25,11 +24,10 @@ export default function Home() {
             <div className="flex flex-col gap-8 print:flex-row">
               <div className="flex flex-col gap-8 print:flex-1">
                 <TopSkillsSection />
-                <ReferencesSection />
+                <EducationSection />
               </div>
               <div className="flex flex-col gap-8 print:flex-1">
                 <LanguagesSection />
-                <EducationSection />
               </div>
             </div>
           </div>

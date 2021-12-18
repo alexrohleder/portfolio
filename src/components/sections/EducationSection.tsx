@@ -3,7 +3,10 @@ import BaseSection from "../BaseSection";
 
 function EducationSection() {
   return (
-    <BaseSection title="Education">
+    <BaseSection
+      title="Education"
+      subTitle="There are unlisted courses and certifications"
+    >
       <ul className="list-disc">
         <li className="mb-2 print:mb-0">
           <a
@@ -38,19 +41,7 @@ function EducationSection() {
             <ExternalLinkIcon className="h-4 w-4 print:hidden" />
           </a>
         </li>
-        <li className="mb-2 print:mb-0">
-          <a
-            className="flex items-center gap-2"
-            href="http://www.zend.com/en/yellow-pages/ZEND029184"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            PHP - Engineering Certification
-            <ExternalLinkIcon className="h-4 w-4 print:hidden" />
-          </a>
-        </li>
       </ul>
-      <p className="text-gray-500 text-sm">And more...</p>
     </BaseSection>
   );
 }
