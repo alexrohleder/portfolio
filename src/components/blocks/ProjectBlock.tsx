@@ -10,8 +10,8 @@ type Props = {
   clientWebsite?: string;
   startDate: Date;
   endDate?: Date;
-  description?: string;
   highlights?: string[];
+  techStack: string[];
 };
 
 function ProjectBlock(props: Props) {
@@ -54,16 +54,21 @@ function ProjectBlock(props: Props) {
           </div>
         </div>
       </div>
-      {props.description && <p className="my-2">{props.description}.</p>}
-      {props.highlights && (
-        <ol className="my-2 list-disc">
-          {props.highlights.map((highlight, index) => (
-            <li className="mb-2 print:mb-0" key={index}>
-              {highlight};
-            </li>
-          ))}
-        </ol>
-      )}
+      <div className="flex flex-col mt-2 gap-2 print:flex-row">
+        {props.highlights && (
+          <ol className="list-disc flex-1">
+            {props.highlights.map((highlight, index) => (
+              <li className="mb-2 print:mb-0" key={index}>
+                {highlight};
+              </li>
+            ))}
+          </ol>
+        )}
+        <div className="flex flex-col text-sm print:w-1/4 lg:flex-row lg:gap-2">
+          <div className="font-semibold">Tech Stack:</div>
+          <div>{props.techStack.join(", ")}.</div>
+        </div>
+      </div>
     </article>
   );
 }

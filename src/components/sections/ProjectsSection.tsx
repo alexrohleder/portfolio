@@ -16,6 +16,14 @@ function ProjectsSection() {
             "There is a huge side of CLI tooling and webpack configuration",
             "Developer experience is critical, this is the platform to build apps for",
           ]}
+          techStack={[
+            "React",
+            "TypeScript",
+            "AWS",
+            "WebPack",
+            "Jest",
+            "NodeJS",
+          ]}
         />
         <ProjectBlock
           title="Formula 1 Trading Application"
@@ -27,6 +35,16 @@ function ProjectsSection() {
             "Handle a lot of live data. The data can receive 5 to 8 updates per second",
             "There is render throttling for different portions of the screen, performance is important",
             "Tested using end to end tests, unit tests and static tests",
+          ]}
+          techStack={[
+            "React",
+            "TypeScript",
+            "WebSocket",
+            "Styled-Components",
+            "Jest",
+            "Cypress",
+            "Redux",
+            "Redux-Sagas",
           ]}
         />
         <ProjectBlock
@@ -40,6 +58,16 @@ function ProjectsSection() {
             "Handled a lot of data, performance was important",
             "There is a set of complex filtering with filter composing heuristics",
             "Fully tested on critical paths with end to end, integration and unit tests",
+          ]}
+          techStack={[
+            "React",
+            "JavaScript",
+            "Redux",
+            "SCSS",
+            "Cypress",
+            "PHP",
+            "Symfony",
+            "MySQL",
           ]}
         />
         <ProjectBlock
@@ -55,6 +83,14 @@ function ProjectsSection() {
             "Developers had direct access to stakeholders, the domain was well known by both",
             "Load performance was critical, many techniques were applied to maintain it",
             "Search functionalities were highly optimized and allowed rich queries",
+          ]}
+          techStack={[
+            "VueJS",
+            "JavaScript",
+            "Laravel",
+            "PHP",
+            "Oracle DB",
+            "SQL",
           ]}
         />
       </div>

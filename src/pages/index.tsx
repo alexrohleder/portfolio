@@ -1,3 +1,4 @@
+import Image from "next/image";
 import BaseHeader from "../components/BaseHeader";
 import EducationSection from "../components/sections/EducationSection";
 import ExperienceSection from "../components/sections/ExperienceSection";
