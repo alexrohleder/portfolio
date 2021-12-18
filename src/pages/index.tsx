@@ -40,6 +40,9 @@ export default function Home() {
       <div className="container mx-auto p-8 print:h-[296mm] print:w-[210mm]">
         page 3
       </div>
+      <div className="container mx-auto p-8 print:hidden">
+        <div className="text-center">Made with ❤️ by Alex Rohleder</div>
+      </div>
     </div>
   );
 }
