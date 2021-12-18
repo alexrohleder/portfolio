@@ -65,6 +65,7 @@ function ProjectsSection() {
             "Redux",
             "SCSS",
             "Cypress",
+            "React Router",
             "PHP",
             "Symfony",
             "MySQL",

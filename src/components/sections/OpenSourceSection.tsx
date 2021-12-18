@@ -16,6 +16,16 @@ function OpenSourceSection() {
             "Efficiently uses DOM and CSS to avoid unecessary computations",
             "Built critical components using test driven development (TDD), used Jest",
           ]}
+          techStack={[
+            "React",
+            "TypeScript",
+            "WebSocket",
+            "Jest",
+            "Tailwind",
+            "NextJS",
+            "Redux",
+            "Redux-Sagas",
+          ]}
         />
         <OpenSourceBlock
           title="Airbnb Mobile Authentication Clone"
@@ -28,6 +38,7 @@ function OpenSourceSection() {
             "Implement url access control and handle redirects",
             "Allows use of social login with Facebook and Google",
           ]}
+          techStack={["VueJS", "TypeScript", "Firebase", "Vue Router", "SCSS"]}
         />
       </div>
     </BaseSection>

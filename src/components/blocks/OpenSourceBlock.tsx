@@ -6,6 +6,7 @@ type Props = {
   deployLink: string;
   year: number;
   highlights: string[];
+  techStack: string[];
 };
 
 function OpenSourceBlock(props: Props) {
@@ -46,13 +47,19 @@ function OpenSourceBlock(props: Props) {
           </div>
         )}
       </div>
-      <ol className="my-4 list-disc">
-        {props.highlights.map((highlight, index) => (
-          <li className="mb-2 print:mb-0" key={index}>
-            {highlight};
-          </li>
-        ))}
-      </ol>
+      <div className="flex flex-col mt-2 gap-2 print:flex-row">
+        <ol className="list-disc flex-1">
+          {props.highlights.map((highlight, index) => (
+            <li className="mb-2 print:mb-0" key={index}>
+              {highlight};
+            </li>
+          ))}
+        </ol>
+        <div className="flex flex-col text-sm print:w-1/4 lg:flex-row lg:gap-2">
+          <div className="font-semibold">Tech Stack:</div>
+          <div>{props.techStack.join(", ")}.</div>
+        </div>
+      </div>
     </article>
   );
 }
