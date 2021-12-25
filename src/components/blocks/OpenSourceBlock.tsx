@@ -13,7 +13,7 @@ function OpenSourceBlock(props: Props) {
   return (
     <article>
       <h1 className="font-semibold">{props.title}</h1>
-      <div className="flex flex-col gap-2 text-gray-500 text-sm mt-1 lgp:flex-row lgp:gap-4">
+      <div className="flex flex-col gap-2 text-gray-500 dark:text-gray-400 text-sm mt-1 lgp:flex-row lgp:gap-4">
         <div className="flex items-center gap-2">
           <CalendarIcon className="h-4 w-4" />
           <div>{props.year}</div>
@@ -22,7 +22,7 @@ function OpenSourceBlock(props: Props) {
           <CodeIcon className="h-4 w-4" />
           <div>
             <a
-              className="text-blue-700 hover:underline font-semibold"
+              className="text-blue-700 dark:text-blue-400 hover:underline font-semibold"
               href={`https://${props.sourceLink}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -36,7 +36,7 @@ function OpenSourceBlock(props: Props) {
             <LinkIcon className="h-4 w-4" />
             <div>
               <a
-                className="text-blue-700 hover:underline font-semibold"
+                className="text-blue-700 dark:text-blue-400 hover:underline font-semibold"
                 href={`https://${props.deployLink}`}
                 target="_blank"
                 rel="noopener noreferrer"

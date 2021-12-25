@@ -7,7 +7,11 @@ type Props = {
 
 function SkillBlock(props: Props) {
   const getStarClassName = (index: number) => {
-    return `h-4 w-4${index <= props.rating ? " fill-blue-500" : ""}`;
+    return `h-4 w-4${
+      index <= props.rating
+        ? " fill-blue-500 dark:fill-blue-400 dark:stroke-blue-400"
+        : ""
+    }`;
   };
 
   return (

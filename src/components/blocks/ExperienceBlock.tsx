@@ -18,7 +18,7 @@ function ExperienceBlock(props: Props) {
     <article>
       <h1 className="font-semibold">
         <a
-          className="text-blue-700 hover:underline"
+          className="text-blue-700 dark:text-blue-400 hover:underline"
           href={props.employeerWebsite}
           target="_blank"
           rel="noopener noreferrer"
@@ -28,7 +28,7 @@ function ExperienceBlock(props: Props) {
         {" - "}
         {props.title}
       </h1>
-      <div className="flex flex-col gap-2 text-gray-500 text-sm mt-1 lgp:gap-4 lgp:flex-row">
+      <div className="flex flex-col gap-2 text-gray-500 dark:text-gray-400 text-sm mt-1 lgp:gap-4 lgp:flex-row">
         <div className="flex items-center gap-2">
           <CalendarIcon className="h-4 w-4" />
           <div>

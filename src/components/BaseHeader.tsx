@@ -5,9 +5,14 @@ import {
   AtSymbolIcon,
   LocationMarkerIcon,
   ExternalLinkIcon,
+  MoonIcon,
+  SunIcon,
 } from "@heroicons/react/outline";
+import useTheme from "../lib/hooks/useTheme";
 
 function BaseHeader() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <header className="flex flex-col gap-8 lgp:flex-row">
       <div className="h-36 w-36">
@@ -37,7 +42,18 @@ function BaseHeader() {
           </div>
           <div className="flex gap-2 print:hidden">
             <button
-              className="px-4 py-2 text-sm font-medium text-black bg-gray-300 rounded hover:bg-gray-400 transition-colors"
+              className="px-3 py-2 text-black bg-gray-300 rounded hover:bg-gray-400 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
+              onClick={toggleTheme}
+              title="Toggle dark mode"
+            >
+              {theme === "light" ? (
+                <MoonIcon className="h-4 w-4" />
+              ) : (
+                <SunIcon className="h-4 w-4" />
+              )}
+            </button>
+            <button
+              className="px-4 py-2 text-sm font-medium text-black bg-gray-300 rounded hover:bg-gray-400 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
               onClick={() => window.print()}
             >
               Download Curriculum

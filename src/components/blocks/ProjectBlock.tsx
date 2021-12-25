@@ -18,7 +18,7 @@ function ProjectBlock(props: Props) {
   return (
     <article>
       <h1 className="font-semibold">{props.title}</h1>
-      <div className="flex flex-col gap-2 text-gray-500 text-sm mt-1 lgp:flex-row lgp:gap-4">
+      <div className="flex flex-col gap-2 text-gray-500 dark:text-gray-400 text-sm mt-1 lgp:flex-row lgp:gap-4">
         <div className="flex items-center gap-2">
           <CalendarIcon className="h-4 w-4" />
           <div>
@@ -31,7 +31,7 @@ function ProjectBlock(props: Props) {
           <BriefcaseIcon className="h-4 w-4" />
           <div>
             <a
-              className="text-blue-700 hover:underline font-semibold"
+              className="text-blue-700 dark:text-blue-400 hover:underline font-semibold"
               href={props.employeerWebsite}
               target="_blank"
               rel="noopener noreferrer"
@@ -42,7 +42,7 @@ function ProjectBlock(props: Props) {
               <>
                 {" consulting for "}
                 <a
-                  className="text-blue-700 hover:underline font-semibold"
+                  className="text-blue-700 dark:text-blue-400 hover:underline font-semibold"
                   href={props.clientWebsite}
                   target="_blank"
                   rel="noopener noreferrer"
