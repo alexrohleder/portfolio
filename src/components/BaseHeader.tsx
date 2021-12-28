@@ -35,7 +35,7 @@ function BaseHeader() {
             <h1 className="text-4xl font-semibold">Alex Rohleder</h1>
             <h2 className="text-xl">
               Software engineer{" "}
-              <span className="hidden lgp:inline">
+              <span className="block lgp:inline">
                 with 6 years of experience
               </span>
             </h2>
