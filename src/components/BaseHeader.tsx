@@ -42,7 +42,7 @@ function BaseHeader() {
           </div>
           <div className="flex gap-2 print:hidden">
             <button
-              className="px-3 py-2 text-black bg-gray-300 rounded hover:bg-gray-400 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
+              className="hidden lg:block px-3 py-2 text-black bg-gray-300 rounded hover:bg-gray-400 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
               onClick={toggleTheme}
               title="Toggle dark mode"
             >
@@ -53,13 +53,13 @@ function BaseHeader() {
               )}
             </button>
             <button
-              className="px-4 py-2 text-sm font-medium text-black bg-gray-300 rounded hover:bg-gray-400 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
+              className="text-center px-4 py-2 text-sm font-medium text-black bg-gray-300 rounded hover:bg-gray-400 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
               onClick={() => window.print()}
             >
               Download Curriculum
             </button>
             <a
-              className="px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded hover:bg-blue-800 transition-colors"
+              className="text-center px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded hover:bg-blue-800 transition-colors"
               href="https://calendly.com/alexrohleder/30min"
               target="_blank"
               rel="noopener noreferrer"
