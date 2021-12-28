@@ -4,7 +4,7 @@ import SkillBlock from "../blocks/SkillBlock";
 function TopSkillsSection() {
   return (
     <BaseSection title="Top Skills" subTitle="Missing any? Contact me 😊">
-      <div className="flex gap-4">
+      <div className="flex gap-2 lg:gap-4">
         <div className="flex-1">
           <SkillBlock name="React" rating={5} />
           <SkillBlock name="Testing" rating={4} />
