@@ -19,8 +19,7 @@ function useTheme() {
     const onBeforePrint = () => {
       blanket.style.backgroundColor =
         theme === "dark"
-          ? window.getComputedStyle(document.getElementById("page"))
-              .backgroundColor
+          ? window.getComputedStyle(document.body).backgroundColor
           : "transparent";
 
       document.body.appendChild(blanket);

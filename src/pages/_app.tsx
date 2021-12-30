@@ -6,13 +6,8 @@ import "tailwindcss/tailwind.css";
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
-      <div
-        id="page"
-        className="dark:bg-gray-900 text-gray-900 dark:text-gray-300"
-      >
-        <DefaultSeo {...seo} />
-        <Component {...pageProps} />
-      </div>
+      <DefaultSeo {...seo} />
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 }
