@@ -9,6 +9,7 @@ import {
   SunIcon,
 } from "@heroicons/react/outline";
 import useTheme from "../lib/hooks/useTheme";
+import profileImg from "../../public/images/profile.jpg";
 
 function BaseHeader() {
   const { theme, toggleTheme } = useTheme();
@@ -22,9 +23,10 @@ function BaseHeader() {
               priority
               width={160}
               height={160}
+              placeholder="blur"
               className="rounded"
               alt="Alex Rohleder's profile picture"
-              src="/images/profile.jpg"
+              src={profileImg}
             />
           </a>
         </Link>
