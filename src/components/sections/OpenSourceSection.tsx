@@ -13,7 +13,7 @@ function OpenSourceSection() {
           highlights={[
             "Highly performant react app targeted to run on slow devices",
             "Receives 10+ updates per second, uses throttling based on device performance",
-            "Efficiently uses DOM and CSS to avoid unecessary computations",
+            "Efficiently uses DOM and CSS to avoid unnecessary  computations",
             "Built critical components using test driven development (TDD), used Jest",
           ]}
           techStack={[
