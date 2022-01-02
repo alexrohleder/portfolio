@@ -5,14 +5,13 @@ import {
   AtSymbolIcon,
   LocationMarkerIcon,
   ExternalLinkIcon,
-  MoonIcon,
   SunIcon,
 } from "@heroicons/react/outline";
 import useTheme from "../lib/hooks/useTheme";
 import profileImg from "../../public/images/profile.jpg";
 
 function BaseHeader() {
-  const { theme, toggleTheme } = useTheme();
+  const { toggleTheme } = useTheme();
 
   return (
     <header className="flex flex-col gap-8 lgp:flex-row">
@@ -44,15 +43,11 @@ function BaseHeader() {
           </div>
           <div className="flex gap-2 print:hidden">
             <button
-              className="hidden lg:block px-3 py-2 text-black bg-gray-300 rounded hover:bg-gray-400 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
+              className="hidden lg:block px-2 py-1 text-black bg-gray-300 rounded hover:bg-gray-400 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
               onClick={toggleTheme}
               title="Toggle dark mode"
             >
-              {theme === "light" ? (
-                <MoonIcon className="h-4 w-4" />
-              ) : (
-                <SunIcon className="h-4 w-4" />
-              )}
+              <SunIcon className="h-6 w-6" />
             </button>
             <button
               className="text-center px-4 py-2 text-sm font-medium text-black bg-gray-300 rounded hover:bg-gray-400 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
@@ -77,13 +72,11 @@ function BaseHeader() {
           </div>
           <div className="flex gap-2 items-center">
             <AtSymbolIcon className="h-4 w-4" stroke="currentColor" />
-            <a href="mailto:alexrohleder96@gmail.com">
-              alexrohleder96@gmail.com
-            </a>
+            <a href="mailto:hi@alexrohleder.com">hi@alexrohleder.com</a>
           </div>
           <div className="flex gap-2 items-center">
             <LocationMarkerIcon className="h-4 w-4" stroke="currentColor" />
-            Trondheim, Norway
+            Oslo, Norway
           </div>
           <div className="flex gap-2 items-center">
             <ExternalLinkIcon className="h-4 w-4" stroke="currentColor" />

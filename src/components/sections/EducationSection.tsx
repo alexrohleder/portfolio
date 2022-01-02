@@ -26,7 +26,7 @@ function EducationSection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            AWS - Cloud Practioner Certification
+            AWS - Cloud Practioner
             <ExternalLinkIcon className="h-4 w-4 print:hidden" />
           </a>
         </li>

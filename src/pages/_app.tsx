@@ -5,7 +5,7 @@ import "tailwindcss/tailwind.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="class" disableTransitionOnChange>
       <DefaultSeo {...seo} />
       <Component {...pageProps} />
     </ThemeProvider>
