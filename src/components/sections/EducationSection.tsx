@@ -19,17 +19,7 @@ function EducationSection() {
             <ExternalLinkIcon className="h-4 w-4 print:hidden" />
           </a>
         </li>
-        <li className="mb-2 print:mb-0">
-          <a
-            className="flex items-center gap-2"
-            href="https://aws.amazon.com/en/certification/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            AWS - Cloud Practioner
-            <ExternalLinkIcon className="h-4 w-4 print:hidden" />
-          </a>
-        </li>
+        <li className="mb-2 print:mb-0">AWS - Cloud Practioner</li>
         <li className="mb-2 print:mb-0">
           <a
             className="flex items-center gap-2"
@@ -38,6 +28,17 @@ function EducationSection() {
             rel="noopener noreferrer"
           >
             React - Advanced React Patterns Course
+            <ExternalLinkIcon className="h-4 w-4 print:hidden" />
+          </a>
+        </li>
+        <li className="mb-2 print:mb-0">
+          <a
+            className="flex items-center gap-2"
+            href="http://www.zend.com/en/yellow-pages/ZEND029184"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Backend - PHP Certified Engineer
             <ExternalLinkIcon className="h-4 w-4 print:hidden" />
           </a>
         </li>

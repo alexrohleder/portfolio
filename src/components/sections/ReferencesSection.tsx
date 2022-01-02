@@ -1,36 +1,21 @@
 import BaseSection from "../BaseSection";
+import ReferenceBlock from "../blocks/ReferenceBlock";
 
 function ReferencesSection() {
   return (
     <BaseSection
       title="References"
-      subTitle="People you can contact via LinkedIn"
+      subTitle="Need more? Ask and I can provide ✌️"
     >
-      <div className="grid grid-cols-2 gap-2">
-        <div>
-          <div>Thadeu Menezes</div>
-          <div className="text-gray-500 dark:text-gray-400 text-sm">
-            Leader at Meta
-          </div>
-        </div>
-        <div>
-          <div>Frederico Oliveira</div>
-          <div className="text-gray-500 dark:text-gray-400 text-sm">
-            Leader at Meta
-          </div>
-        </div>
-        <div>
-          <div>Daniele Pagano</div>
-          <div className="text-gray-500 dark:text-gray-400 text-sm">
-            Leader at Sportradar
-          </div>
-        </div>
-        <div>
-          <div>Fernando Alencar</div>
-          <div className="text-gray-500 dark:text-gray-400 text-sm">
-            Business Partner
-          </div>
-        </div>
+      <div className="flex flex-col gap-2">
+        <ReferenceBlock
+          name="Fernando Alencar"
+          relation="Worked with at Sportradar; Bought a house with him"
+        />
+        <ReferenceBlock
+          name="Stefan Pammer"
+          relation="Was my PO in many projects at Sportradar"
+        />
       </div>
     </BaseSection>
   );
