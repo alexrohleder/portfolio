@@ -2,7 +2,7 @@ import { useTheme as useNextTheme } from "next-themes";
 import { useEffect } from "react";
 
 function useTheme() {
-  const { theme, setTheme } = useNextTheme();
+  const { setTheme, theme, resolvedTheme } = useNextTheme();
 
   // This effect makes sure to remove dark theme when printing the page.
   // We also add a div in front of the content when switching themes to avoid
@@ -18,7 +18,7 @@ function useTheme() {
 
     const onBeforePrint = () => {
       blanket.style.backgroundColor =
-        theme === "dark"
+        resolvedTheme === "dark"
           ? window.getComputedStyle(document.body).backgroundColor
           : "transparent";
 
@@ -27,7 +27,7 @@ function useTheme() {
     };
 
     const onAfterPrint = () => {
-      if (theme === "dark") {
+      if (resolvedTheme === "dark") {
         document.documentElement.classList.add("dark");
       }
 
@@ -41,10 +41,10 @@ function useTheme() {
       window.removeEventListener("beforeprint", onBeforePrint);
       window.removeEventListener("afterprint", onAfterPrint);
     };
-  }, [theme]);
+  }, [resolvedTheme]);
 
   return {
-    theme,
+    theme: resolvedTheme,
     toggleTheme() {
       setTheme(theme === "light" ? "dark" : "light");
     },

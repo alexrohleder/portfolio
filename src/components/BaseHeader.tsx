@@ -6,12 +6,20 @@ import {
   LocationMarkerIcon,
   ExternalLinkIcon,
   SunIcon,
+  MoonIcon,
 } from "@heroicons/react/outline";
 import useTheme from "../lib/hooks/useTheme";
 import profileImg from "../../public/images/profile.jpg";
+import { useEffect, useState } from "react";
 
 function BaseHeader() {
-  const { toggleTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const { theme, toggleTheme } = useTheme();
+
+  useEffect(() => {
+    // After mounting we have access to the theme
+    setMounted(true);
+  }, []);
 
   return (
     <header className="flex flex-col gap-8 lgp:flex-row">
@@ -47,7 +55,12 @@ function BaseHeader() {
               onClick={toggleTheme}
               title="Toggle dark mode"
             >
-              <SunIcon className="h-6 w-6" />
+              {mounted &&
+                (theme === "dark" ? (
+                  <SunIcon className="h-6 w-6" />
+                ) : (
+                  <MoonIcon className="h-6 w-6" />
+                ))}
             </button>
             <button
               className="text-center px-4 py-2 text-sm font-medium text-black bg-gray-300 rounded hover:bg-gray-400 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
