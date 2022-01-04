@@ -1,8 +1,10 @@
+import { NextSeoProps } from "next-seo";
+
 const years = new Date().getFullYear() - 2015;
 const title = "Alex Rohleder – Software Engineer Portfolio";
 const description = `Software engineer with ${years} years of experience and passion for building high-impact, well-performing user experiences.`;
 
-const seo = {
+const seo: NextSeoProps = {
   title,
   description,
   openGraph: {
