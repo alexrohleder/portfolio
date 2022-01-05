@@ -51,19 +51,7 @@ function BaseHeader() {
           </div>
           <div className="flex gap-2 print:hidden">
             <button
-              className="hidden lg:block px-2 py-1 text-black bg-gray-300 rounded hover:bg-gray-400 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
-              onClick={toggleTheme}
-              title="Toggle dark mode"
-            >
-              {mounted &&
-                (theme === "dark" ? (
-                  <SunIcon className="h-6 w-6" />
-                ) : (
-                  <MoonIcon className="h-6 w-6" />
-                ))}
-            </button>
-            <button
-              className="text-center px-4 py-2 text-sm font-medium text-black bg-gray-300 rounded hover:bg-gray-400 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
+              className="hidden lg:block text-center px-4 py-2 text-sm font-medium text-black rounded hover:bg-gray-300 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
               onClick={() => window.print()}
             >
               Download Curriculum
@@ -76,6 +64,18 @@ function BaseHeader() {
             >
               Schedule a meeting
             </a>
+            <button
+              className="hidden lg:block px-2 py-1 text-black rounded bg-gray-200 hover:bg-gray-300 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
+              onClick={toggleTheme}
+              title="Toggle dark mode"
+            >
+              {mounted &&
+                (theme === "dark" ? (
+                  <SunIcon className="h-5 w-5" />
+                ) : (
+                  <MoonIcon className="h-5 w-5" />
+                ))}
+            </button>
           </div>
         </div>
         <div className="grid gap-2 print:gap-0 print:grid-rows-3 print:grid-cols-2 lg:grid-rows-2 lg:grid-cols-3">

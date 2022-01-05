@@ -14,7 +14,7 @@ class Document extends NextDocument {
             href="/styles/print.css"
           />
         </Head>
-        <body className="dark:bg-black text-gray-900 dark:text-gray-300">
+        <body className="bg-gray-50 print:bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-300">
           <Main />
           <NextScript />
         </body>
