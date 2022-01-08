@@ -1,3 +1,4 @@
+import BaseFooter from "../components/BaseFooter";
 import BaseHeader from "../components/BaseHeader";
 import BasePages from "../components/BasePages";
 import EducationSection from "../components/sections/EducationSection";
@@ -39,9 +40,7 @@ export default function Home() {
           <OpenSourceSection />
         </div>
       </BasePages>
-      <div className="container mx-auto p-8 print:hidden">
-        <div className="text-center">Made with ❤️ by Alex Rohleder</div>
-      </div>
+      <BaseFooter />
     </div>
   );
 }
