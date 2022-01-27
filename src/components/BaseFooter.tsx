@@ -2,7 +2,7 @@ function BaseFooter() {
   return (
     <footer className="container print:hidden">
       <div className="px-8 py-32 lg:py-48 text-center">
-        <a href="mailto:hi@alexrohleder.com">
+        <a href="mailto:alexrohleder96@gmail.com">
           <div className="text-2xl -mb-2 lg:-mb-4">
             I can help on your project
           </div>

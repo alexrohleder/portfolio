@@ -85,7 +85,9 @@ function BaseHeader() {
           </div>
           <div className="flex gap-2 items-center">
             <AtSymbolIcon className="h-4 w-4" stroke="currentColor" />
-            <a href="mailto:hi@alexrohleder.com">hi@alexrohleder.com</a>
+            <a href="mailto:alexrohleder96@gmail.com">
+              alexrohleder96@gmail.com
+            </a>
           </div>
           <div className="flex gap-2 items-center">
             <LocationMarkerIcon className="h-4 w-4" stroke="currentColor" />

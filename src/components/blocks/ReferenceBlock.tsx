@@ -14,7 +14,7 @@ function ReferenceBlock(props: Props) {
         <div>{props.name}</div>
         <a
           className="text-sm text-blue-700 dark:text-blue-400"
-          href={`mailto:hi@alexrohleder.com?subject=${subject}&body=${body}`}
+          href={`mailto:alexrohleder96@gmail.com?subject=${subject}&body=${body}`}
         >
           (Request contact)
         </a>
