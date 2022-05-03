@@ -12,11 +12,11 @@ function BaseFooter() {
         </a>
       </div>
       <div className="mx-auto p-8">
-        <div className="bg-gray-900 text-white p-8 rounded-md">
+        <div className="p-8 rounded-md">
           This site is released under a{" "}
           <a
             href="https://creativecommons.org/licenses/by-nc/4.0/"
-            className="hover:text-blue-400"
+            className="hover:text-blue-500"
           >
             Creative Commons BY-NC License
           </a>

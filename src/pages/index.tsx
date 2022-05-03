@@ -30,7 +30,6 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-8 print:flex-1">
                 <LanguagesSection />
-                <ReferencesSection />
               </div>
             </div>
           </div>

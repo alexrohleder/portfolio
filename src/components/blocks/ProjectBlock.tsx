@@ -65,7 +65,7 @@ function ProjectBlock(props: Props) {
           </ol>
         )}
         <div className="flex flex-col text-sm print:w-1/4 lg:flex-row lg:gap-2">
-          <div className="font-semibold">Tech Stack:</div>
+          <div className="font-semibold whitespace-nowrap">Tech Stack:</div>
           <div>{props.techStack.join(", ")}.</div>
         </div>
       </div>
