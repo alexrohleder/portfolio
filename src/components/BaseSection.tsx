@@ -1,10 +1,11 @@
 type Props = {
   title: string;
   subTitle?: string;
+  footerNote?: string;
   children: React.ReactNode;
 };
 
-function BaseSection({ title, subTitle, children }: Props) {
+function BaseSection({ title, subTitle, footerNote, children }: Props) {
   return (
     <section>
       <div className="mb-4">
@@ -16,6 +17,11 @@ function BaseSection({ title, subTitle, children }: Props) {
         )}
       </div>
       {children}
+      {footerNote && (
+        <footer className="text-gray-500 dark:text-gray-400 text-xs mt-4">
+          {footerNote}
+        </footer>
+      )}
     </section>
   );
 }

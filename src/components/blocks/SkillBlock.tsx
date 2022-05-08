@@ -7,7 +7,7 @@ type Props = {
 
 function SkillBlock(props: Props) {
   const getStarClassName = (index: number) => {
-    return `h-4 w-4${
+    return `h-3 w-3${
       index <= props.rating
         ? " fill-blue-500 dark:fill-blue-400 dark:stroke-blue-400"
         : ""
@@ -15,7 +15,7 @@ function SkillBlock(props: Props) {
   };
 
   return (
-    <div className="flex items-center justify-between">
+    <div className="print:flex items-center justify-between">
       <div>{props.name}</div>
       <div className="flex items-center">
         <StarIcon className={getStarClassName(1)} />

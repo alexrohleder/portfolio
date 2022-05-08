@@ -5,7 +5,7 @@ import seo from "../../next-seo.config";
 import "tailwindcss/tailwind.css";
 import { useRouter } from "next/router";
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   const { route } = useRouter();
 
   const domain =
@@ -26,4 +26,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default App;

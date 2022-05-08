@@ -1,6 +1,7 @@
 import { CalendarIcon, LocationMarkerIcon } from "@heroicons/react/outline";
 import getFormattedDate from "../../lib/getFormattedDate";
 import getWorkedTime from "../../lib/getWorkedTime";
+import BaseLink from "../BaseLink";
 
 type Props = {
   title: string;
@@ -17,14 +18,14 @@ function ExperienceBlock(props: Props) {
   return (
     <article>
       <h1 className="font-semibold">
-        <a
-          className="text-blue-700 dark:text-blue-400 hover:underline"
+        <BaseLink
+          variant="primary"
           href={props.employeerWebsite}
           target="_blank"
           rel="noopener noreferrer"
         >
           {props.employeer}
-        </a>
+        </BaseLink>
         {" - "}
         {props.title}
       </h1>

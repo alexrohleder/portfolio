@@ -1,4 +1,5 @@
 import { CalendarIcon, CodeIcon, LinkIcon } from "@heroicons/react/outline";
+import BaseLink from "../BaseLink";
 
 type Props = {
   title: string;
@@ -21,28 +22,28 @@ function OpenSourceBlock(props: Props) {
         <div className="flex items-center gap-2">
           <CodeIcon className="h-4 w-4" />
           <div>
-            <a
-              className="text-blue-700 dark:text-blue-400 hover:underline font-semibold"
+            <BaseLink
+              variant="primary"
               href={`https://${props.sourceLink}`}
               target="_blank"
               rel="noopener noreferrer"
             >
               {props.sourceLink}
-            </a>
+            </BaseLink>
           </div>
         </div>
         {props.deployLink && (
           <div className="flex items-center gap-2">
             <LinkIcon className="h-4 w-4" />
             <div>
-              <a
-                className="text-blue-700 dark:text-blue-400 hover:underline font-semibold"
+              <BaseLink
+                variant="primary"
                 href={`https://${props.deployLink}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {props.deployLink}
-              </a>
+              </BaseLink>
             </div>
           </div>
         )}

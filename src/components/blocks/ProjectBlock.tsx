@@ -1,6 +1,7 @@
 import { BriefcaseIcon, CalendarIcon } from "@heroicons/react/outline";
 import getFormattedDate from "../../lib/getFormattedDate";
 import getWorkedTime from "../../lib/getWorkedTime";
+import BaseLink from "../BaseLink";
 
 type Props = {
   title: string;
@@ -30,25 +31,25 @@ function ProjectBlock(props: Props) {
         <div className="flex items-center gap-2">
           <BriefcaseIcon className="h-4 w-4" />
           <div>
-            <a
-              className="text-blue-700 dark:text-blue-400 hover:underline font-semibold"
+            <BaseLink
+              variant="primary"
               href={props.employeerWebsite}
               target="_blank"
               rel="noopener noreferrer"
             >
               {props.employeer}
-            </a>
+            </BaseLink>
             {props.client && (
               <>
                 {" consulting for "}
-                <a
-                  className="text-blue-700 dark:text-blue-400 hover:underline font-semibold"
+                <BaseLink
+                  variant="primary"
                   href={props.clientWebsite}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {props.client}
-                </a>
+                </BaseLink>
               </>
             )}
           </div>

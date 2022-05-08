@@ -11,6 +11,8 @@ import {
 import useTheme from "../lib/hooks/useTheme";
 import profileImg from "../../public/images/profile.jpg";
 import { useEffect, useState } from "react";
+import BaseLink from "./BaseLink";
+import BaseButton from "./BaseButton";
 
 function BaseHeader() {
   const [mounted, setMounted] = useState(false);
@@ -45,49 +47,42 @@ function BaseHeader() {
             <h2 className="text-xl">
               Software engineer{" "}
               <span className="block lgp:inline">
-                with 6 years of experience
+                with {new Date().getFullYear() - 2015} years of experience
               </span>
             </h2>
           </div>
           <div className="flex gap-2 print:hidden">
-            <button
-              className="hidden lg:block text-center px-4 py-2 text-sm font-medium text-black rounded hover:bg-gray-300 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
-              onClick={() => window.print()}
-            >
+            <BaseButton onClick={() => window.print()}>
               Download Curriculum
-            </button>
-            <a
-              className="text-center px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded hover:bg-blue-800 transition-colors"
+            </BaseButton>
+            <BaseButton
+              variant="primary"
               href="https://calendly.com/alexrohleder/30min"
               target="_blank"
               rel="noopener noreferrer"
             >
               Schedule a meeting
-            </a>
-            <button
-              className="hidden lg:block px-2 py-1 text-black rounded bg-gray-200 hover:bg-gray-300 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-700 transition-colors"
-              onClick={toggleTheme}
-              title="Toggle dark mode"
-            >
+            </BaseButton>
+            <BaseButton onClick={toggleTheme} title="Toggle dark mode">
               {mounted &&
                 (theme === "dark" ? (
                   <SunIcon className="h-5 w-5" />
                 ) : (
                   <MoonIcon className="h-5 w-5" />
                 ))}
-            </button>
+            </BaseButton>
           </div>
         </div>
         <div className="grid gap-2 print:gap-0 print:grid-rows-3 print:grid-cols-2 lg:grid-rows-2 lg:grid-cols-3">
           <div className="flex gap-2 items-center">
             <PhoneIcon className="h-4 w-4" stroke="currentColor" />
-            <a href="tel:+4741244953">+47 412 44 953</a>
+            <BaseLink href="tel:+4741244953">+47 412 44 953</BaseLink>
           </div>
           <div className="flex gap-2 items-center">
             <AtSymbolIcon className="h-4 w-4" stroke="currentColor" />
-            <a href="mailto:alexrohleder96@gmail.com">
+            <BaseLink href="mailto:alexrohleder96@gmail.com">
               alexrohleder96@gmail.com
-            </a>
+            </BaseLink>
           </div>
           <div className="flex gap-2 items-center">
             <LocationMarkerIcon className="h-4 w-4" stroke="currentColor" />
@@ -95,33 +90,33 @@ function BaseHeader() {
           </div>
           <div className="flex gap-2 items-center">
             <ExternalLinkIcon className="h-4 w-4" stroke="currentColor" />
-            <a
+            <BaseLink
               href="https://linkedin.com/in/alexrohleder"
               target="_blank"
               rel="noopener noreferrer"
             >
               linkedin.com/in/alexrohleder
-            </a>
+            </BaseLink>
           </div>
           <div className="flex gap-2 items-center">
             <ExternalLinkIcon className="h-4 w-4" stroke="currentColor" />
-            <a
+            <BaseLink
               href="https://twitter.com/alexrohleder"
               target="_blank"
               rel="noopener noreferrer"
             >
               twitter.com/alexrohleder
-            </a>
+            </BaseLink>
           </div>
           <div className="flex gap-2 items-center">
             <ExternalLinkIcon className="h-4 w-4" stroke="currentColor" />
-            <a
+            <BaseLink
               href="https://github.com/alexrohleder"
               target="_blank"
               rel="noopener noreferrer"
             >
               github.com/alexrohleder
-            </a>
+            </BaseLink>
           </div>
         </div>
       </div>

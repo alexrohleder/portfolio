@@ -3,12 +3,12 @@ import BaseSection from "../BaseSection";
 const LanguagesSection = () => (
   <BaseSection
     title="Languages"
-    subTitle="Based on CEFR language proficiency levels"
+    footerNote="Based on CEFR language proficiency levels"
   >
     <div className="flex flex-col">
       <div className="grid grid-cols-4 gap-8">
         <div>Portuguese</div>
-        <div className="text-right italic">Native</div>
+        <div className="text-right italic">C2</div>
         <div>English</div>
         <div className="text-right italic">C2</div>
       </div>
