@@ -27,8 +27,11 @@ function BasePages(props: Props) {
             <div className="hidden absolute bottom-4 right-8 print:block">
               <div className="inline text-gray-500">
                 See more at{" "}
-                <BaseLink href="https://alexrohleder.com">
-                  alexrohleder.com
+                <BaseLink
+                  variant="primary"
+                  href="https://linkedin.com/in/alexrohleder"
+                >
+                  linkedin.com/in/alexrohleder
                 </BaseLink>
               </div>
               <div className="inline-block w-4 h-px" />
