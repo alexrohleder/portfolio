@@ -26,12 +26,12 @@ export default function Home() {
             <div className="flex flex-col gap-8 print:flex-row">
               <div className="flex flex-col gap-8 print:flex-1">
                 <TopSkillsSection />
-                <EducationSection />
               </div>
               <div className="flex flex-col gap-8 print:flex-1">
                 <LanguagesSection />
               </div>
             </div>
+            <EducationSection />
           </div>
         </div>
         <div className="flex flex-col gap-8">

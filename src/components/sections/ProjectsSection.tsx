@@ -4,7 +4,7 @@ import ProjectBlock from "../blocks/ProjectBlock";
 function ProjectsSection() {
   return (
     <BaseSection title="Projects">
-      <div className="grid xl:grid-cols-2 gap-6 print:gap-4">
+      <div className="grid gap-6 xl:grid-cols-2 print:gap-4">
         <ProjectBlock
           title="Micro-Frontend platform"
           employeer="Sportradar"
@@ -34,7 +34,7 @@ function ProjectsSection() {
             "Real-time frontend built with Typescript, React, Redux and Styled-Components",
             "Handle a lot of live data. The data can receive 5 to 8 updates per second",
             "There is render throttling for different portions of the screen, performance is important",
-            "Tested using end to end tests, unit tests and static tests",
+            "Tested using end-to-end tests, unit tests and static tests",
           ]}
           techStack={[
             "React",
@@ -57,7 +57,7 @@ function ProjectsSection() {
             "Single page frontend built with React, Redux and SCSS",
             "Handled a lot of data, performance was important",
             "There is a set of complex filtering with filter composing heuristics",
-            "Fully tested on critical paths with end to end, integration and unit tests",
+            "Fully tested on critical paths with end-to-end, integration and unit tests",
           ]}
           techStack={[
             "React",

@@ -7,7 +7,7 @@ function EducationSection() {
       title="Education"
       footerNote="There are unlisted courses and certifications"
     >
-      <ul className="list-disc">
+      <ul className="flex gap-8 list-disc">
         <li className="mb-2 print:mb-0">
           <BaseLink
             className="flex items-center gap-2"

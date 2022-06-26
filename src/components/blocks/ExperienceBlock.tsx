@@ -5,33 +5,37 @@ import BaseLink from "../BaseLink";
 
 type Props = {
   title: string;
-  employeer: string;
-  employeerWebsite: string;
+  employeer?: string;
+  employeerWebsite?: string;
   startDate: Date;
   endDate?: Date;
   location: string;
-  summary: string;
-  highlights: string[];
+  summary?: string;
+  highlights?: string[];
 };
 
 function ExperienceBlock(props: Props) {
   return (
     <article>
       <h1 className="font-semibold">
-        <BaseLink
-          variant="primary"
-          href={props.employeerWebsite}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {props.employeer}
-        </BaseLink>
-        {" - "}
+        {props.employeer && (
+          <>
+            <BaseLink
+              variant="primary"
+              href={props.employeerWebsite}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {props.employeer}
+            </BaseLink>
+            {" - "}
+          </>
+        )}
         {props.title}
       </h1>
-      <div className="flex flex-col gap-2 text-gray-500 dark:text-gray-400 text-sm mt-1 lgp:gap-4 lgp:flex-row">
+      <div className="flex flex-col gap-2 mt-1 text-sm text-gray-500 dark:text-gray-400 lgp:gap-4 lgp:flex-row">
         <div className="flex items-center gap-2">
-          <CalendarIcon className="h-4 w-4" />
+          <CalendarIcon className="w-4 h-4" />
           <div>
             {getFormattedDate(props.startDate)} -{" "}
             {props.endDate ? getFormattedDate(props.endDate) : "Ongoing"} ·{" "}
@@ -39,18 +43,20 @@ function ExperienceBlock(props: Props) {
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <LocationMarkerIcon className="h-4 w-4" />
+          <LocationMarkerIcon className="w-4 h-4" />
           <div>{props.location}</div>
         </div>
       </div>
-      <p className="my-2">{props.summary}</p>
-      <ol className="list-disc">
-        {props.highlights.map((highlight, index) => (
-          <li className="mb-2 print:mb-0" key={index}>
-            {highlight};
-          </li>
-        ))}
-      </ol>
+      {props.summary && <p className="my-2">{props.summary}</p>}
+      {props.highlights && (
+        <ol className="list-disc">
+          {props.highlights.map((highlight, index) => (
+            <li className="mb-2 print:mb-0" key={index}>
+              {highlight};
+            </li>
+          ))}
+        </ol>
+      )}
     </article>
   );
 }
