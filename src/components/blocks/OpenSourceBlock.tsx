@@ -4,7 +4,7 @@ import BaseLink from "../BaseLink";
 type Props = {
   title: string;
   sourceLink: string;
-  deployLink: string;
+  deployLink?: string;
   year: number;
   highlights: string[];
   techStack: string[];
@@ -14,13 +14,13 @@ function OpenSourceBlock(props: Props) {
   return (
     <article>
       <h1 className="font-semibold">{props.title}</h1>
-      <div className="flex flex-col gap-2 text-gray-500 dark:text-gray-400 text-sm mt-1 lgp:flex-row lgp:gap-4">
+      <div className="flex flex-col gap-2 mt-1 text-sm text-gray-500 dark:text-gray-400 lgp:flex-row lgp:gap-4">
         <div className="flex items-center gap-2">
-          <CalendarIcon className="h-4 w-4" />
+          <CalendarIcon className="w-4 h-4" />
           <div>{props.year}</div>
         </div>
         <div className="flex items-center gap-2">
-          <CodeIcon className="h-4 w-4" />
+          <CodeIcon className="w-4 h-4" />
           <div>
             <BaseLink
               variant="primary"
@@ -34,7 +34,7 @@ function OpenSourceBlock(props: Props) {
         </div>
         {props.deployLink && (
           <div className="flex items-center gap-2">
-            <LinkIcon className="h-4 w-4" />
+            <LinkIcon className="w-4 h-4" />
             <div>
               <BaseLink
                 variant="primary"
@@ -48,8 +48,8 @@ function OpenSourceBlock(props: Props) {
           </div>
         )}
       </div>
-      <div className="flex flex-col mt-2 gap-2 print:flex-row">
-        <ol className="list-disc flex-1">
+      <div className="flex flex-col gap-2 mt-1 print:flex-row">
+        <ol className="flex-1 list-disc">
           {props.highlights.map((highlight, index) => (
             <li className="mb-2 print:mb-0" key={index}>
               {highlight};

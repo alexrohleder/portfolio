@@ -24,17 +24,17 @@ function BasePages(props: Props) {
             className={cn("print:relative container mx-auto p-8", printSize)}
           >
             {page}
-            <div className="hidden absolute bottom-4 right-8 print:block">
-              <div className="inline text-gray-500">
-                See more at{" "}
+            <div className="absolute hidden text-right bottom-4 right-8 left-8 print:block">
+              <span className="text-gray-500">
+                Made with React. See more at{" "}
                 <BaseLink
                   variant="primary"
                   href="https://linkedin.com/in/alexrohleder"
                 >
                   linkedin.com/in/alexrohleder
                 </BaseLink>
-              </div>
-              <div className="inline-block w-4 h-px" />
+              </span>
+              {". "}
               {index + 1} of {pages}
             </div>
           </div>

@@ -4,12 +4,40 @@ import ProjectBlock from "../blocks/ProjectBlock";
 function ProjectsSection() {
   return (
     <BaseSection title="Projects">
-      <div className="grid gap-6 xl:grid-cols-2 print:gap-4">
+      <div className="grid gap-6 xl:grid-cols-2 print:gap-3">
+        <ProjectBlock
+          title="PowerOffice website"
+          employeer=""
+          client="PowerOffice"
+          clientWebsite="https://poweroffice.no"
+          employeerWebsite=""
+          startDate={new Date(2022, 4)}
+          highlights={[
+            "Next.js website built with Sanity CMS",
+            "Has a NodeJS API that uses Google Maps API, Redis and a relational database",
+            "The CMS setup allows the creation of new unique pages with customizable modules",
+            "There are many animations made with Framer Motion; Some with complex orchestration",
+          ]}
+          techStack={[
+            "React",
+            "TypeScript",
+            "Next.js",
+            "Sanity CMS",
+            "Framer Motion",
+            "AWS",
+            "Redis",
+            "Vercel",
+            "NodeJS",
+            "Google Tag Manager",
+            "Figma",
+          ]}
+        />
         <ProjectBlock
           title="Micro-Frontend platform"
           employeer="Sportradar"
           employeerWebsite="https://sportradar.com"
           startDate={new Date(2021, 6)}
+          endDate={new Date(2022, 3)}
           highlights={[
             "Single page frontend built with TypeScript, React, Import-Maps and Webpack",
             "Able to load different apps into a single interface and bridge their communication",
@@ -30,6 +58,7 @@ function ProjectsSection() {
           employeer="Sportradar"
           employeerWebsite="https://sportradar.com"
           startDate={new Date(2020, 1)}
+          endDate={new Date(2022, 3)}
           highlights={[
             "Real-time frontend built with Typescript, React, Redux and Styled-Components",
             "Handle a lot of live data. The data can receive 5 to 8 updates per second",
@@ -45,6 +74,7 @@ function ProjectsSection() {
             "Cypress",
             "Redux",
             "Redux-Sagas",
+            "Figma",
           ]}
         />
         <ProjectBlock
@@ -69,6 +99,7 @@ function ProjectsSection() {
             "PHP",
             "Symfony",
             "MySQL",
+            "Figma",
           ]}
         />
         <ProjectBlock

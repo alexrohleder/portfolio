@@ -2,7 +2,7 @@ import BaseSection from "../BaseSection";
 
 function WhatSetsMeApartSection() {
   return (
-    <BaseSection title="What sets me apart?">
+    <BaseSection title="What sets me apart">
       <ul className="list-disc">
         <li className="mb-2 print:mb-0">
           I demonstrate strong performance so <b>colleagues can rely upon me</b>

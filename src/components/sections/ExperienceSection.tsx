@@ -2,16 +2,16 @@ import ExperienceBlock from "../blocks/ExperienceBlock";
 import BaseSection from "../BaseSection";
 
 function ExperienceSection() {
-  const years = new Date().getFullYear() - 2016;
-  const subTitle = `${years} years as full-time and 1 year as intern — there are unlisted working experiences.`;
-
   return (
-    <BaseSection title="Experience" subTitle={subTitle}>
-      <div className="flex flex-col gap-4">
+    <BaseSection
+      title="Experience"
+      subTitle="There are unlisted working experiences."
+    >
+      <div className="flex flex-col gap-3">
         <ExperienceBlock
           title="Software Engineer (Independent Contractor)"
           startDate={new Date(2022, 3)}
-          location="Oslo, Norway (Remote)"
+          location="Oslo, Norway"
         />
         <ExperienceBlock
           title="Software Engineer (Senior)"
@@ -30,7 +30,7 @@ function ExperienceSection() {
         />
         <ExperienceBlock
           title="Software Engineer (Mid-level)"
-          employeer="Meta"
+          employeer="Grupo Meta"
           employeerWebsite="https://www.meta.com.br/"
           startDate={new Date(2016, 2)}
           endDate={new Date(2018, 0)}

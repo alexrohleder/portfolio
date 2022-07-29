@@ -1,17 +1,7 @@
 function BaseFooter() {
   return (
     <footer className="container print:hidden">
-      <div className="px-8 py-32 lg:py-48 text-center">
-        <a href="mailto:alexrohleder96@gmail.com">
-          <div className="text-2xl -mb-2 lg:-mb-4">
-            I can help on your project
-          </div>
-          <div className="text-6xl lg:text-9xl font-bold hover:text-blue-500">
-            Get in touch.
-          </div>
-        </a>
-      </div>
-      <div className="mx-auto p-8">
+      <div className="p-8 mx-auto">
         <div className="p-8 rounded-md">
           This site is released under a{" "}
           <a

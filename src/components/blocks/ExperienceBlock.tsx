@@ -33,13 +33,19 @@ function ExperienceBlock(props: Props) {
         )}
         {props.title}
       </h1>
-      <div className="flex flex-col gap-2 mt-1 text-sm text-gray-500 dark:text-gray-400 lgp:gap-4 lgp:flex-row">
+      <div className="flex flex-col gap-2 my-1 text-sm text-gray-500 dark:text-gray-400 lgp:gap-4 lgp:flex-row">
         <div className="flex items-center gap-2">
           <CalendarIcon className="w-4 h-4" />
           <div>
             {getFormattedDate(props.startDate)} -{" "}
-            {props.endDate ? getFormattedDate(props.endDate) : "Ongoing"} ·{" "}
-            {getWorkedTime(props.startDate, props.endDate)}
+            {props.endDate ? (
+              <>
+                {getFormattedDate(props.endDate)} ·{" "}
+                {getWorkedTime(props.startDate, props.endDate)}
+              </>
+            ) : (
+              "Ongoing"
+            )}
           </div>
         </div>
         <div className="flex items-center gap-2">
@@ -47,7 +53,7 @@ function ExperienceBlock(props: Props) {
           <div>{props.location}</div>
         </div>
       </div>
-      {props.summary && <p className="my-2">{props.summary}</p>}
+      {props.summary && <p>{props.summary}</p>}
       {props.highlights && (
         <ol className="list-disc">
           {props.highlights.map((highlight, index) => (

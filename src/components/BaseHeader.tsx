@@ -24,7 +24,7 @@ function BaseHeader() {
   }, []);
 
   return (
-    <header className="flex flex-col gap-8 lgp:flex-row">
+    <header className="flex flex-col gap-6 lgp:flex-row">
       <div className="h-36 w-36">
         <Link href="/">
           <a>
@@ -40,8 +40,8 @@ function BaseHeader() {
           </a>
         </Link>
       </div>
-      <div className="flex flex-col gap-8 print:gap-0 lg:gap-4 lgp:flex-1 lgp:h-36 lgp:justify-between">
-        <div className="w-full flex flex-col gap-8 justify-between lg:items-center lg:flex-row">
+      <div className="flex flex-col gap-6 print:gap-0 lg:gap-4 lgp:flex-1 lgp:h-36 lgp:justify-between">
+        <div className="flex flex-col justify-between w-full gap-6 lg:items-center lg:flex-row">
           <div>
             <h1 className="text-4xl font-semibold">Alex Rohleder</h1>
             <h2 className="text-xl">
@@ -66,30 +66,30 @@ function BaseHeader() {
             <BaseButton onClick={toggleTheme} title="Toggle dark mode">
               {mounted &&
                 (theme === "dark" ? (
-                  <SunIcon className="h-5 w-5" />
+                  <SunIcon className="w-5 h-5" />
                 ) : (
-                  <MoonIcon className="h-5 w-5" />
+                  <MoonIcon className="w-5 h-5" />
                 ))}
             </BaseButton>
           </div>
         </div>
         <div className="grid gap-2 print:gap-0 print:grid-rows-3 print:grid-cols-2 lg:grid-rows-2 lg:grid-cols-3">
-          <div className="flex gap-2 items-center">
-            <PhoneIcon className="h-4 w-4" stroke="currentColor" />
+          <div className="flex items-center gap-2">
+            <PhoneIcon className="w-4 h-4" stroke="currentColor" />
             <BaseLink href="tel:+4741244953">+47 412 44 953</BaseLink>
           </div>
-          <div className="flex gap-2 items-center">
-            <AtSymbolIcon className="h-4 w-4" stroke="currentColor" />
+          <div className="flex items-center gap-2">
+            <AtSymbolIcon className="w-4 h-4" stroke="currentColor" />
             <BaseLink href="mailto:alexrohleder96@gmail.com">
               alexrohleder96@gmail.com
             </BaseLink>
           </div>
-          <div className="flex gap-2 items-center">
-            <LocationMarkerIcon className="h-4 w-4" stroke="currentColor" />
+          <div className="flex items-center gap-2">
+            <LocationMarkerIcon className="w-4 h-4" stroke="currentColor" />
             Oslo, Norway
           </div>
-          <div className="flex gap-2 items-center">
-            <ExternalLinkIcon className="h-4 w-4" stroke="currentColor" />
+          <div className="flex items-center gap-2">
+            <ExternalLinkIcon className="w-4 h-4" stroke="currentColor" />
             <BaseLink
               href="https://linkedin.com/in/alexrohleder"
               target="_blank"
@@ -98,18 +98,18 @@ function BaseHeader() {
               linkedin.com/in/alexrohleder
             </BaseLink>
           </div>
-          <div className="flex gap-2 items-center">
-            <ExternalLinkIcon className="h-4 w-4" stroke="currentColor" />
+          <div className="flex items-center gap-2">
+            <ExternalLinkIcon className="w-4 h-4" stroke="currentColor" />
             <BaseLink
-              href="https://twitter.com/alexrohleder"
+              href="https://mentorcruise.com/mentor/alexrohleder/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              twitter.com/alexrohleder
+              mentorcruise.com/mentor/alexrohleder
             </BaseLink>
           </div>
-          <div className="flex gap-2 items-center">
-            <ExternalLinkIcon className="h-4 w-4" stroke="currentColor" />
+          <div className="flex items-center gap-2">
+            <ExternalLinkIcon className="w-4 h-4" stroke="currentColor" />
             <BaseLink
               href="https://github.com/alexrohleder"
               target="_blank"

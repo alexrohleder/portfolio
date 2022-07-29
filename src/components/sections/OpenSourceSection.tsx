@@ -4,7 +4,7 @@ import OpenSourceBlock from "../blocks/OpenSourceBlock";
 function OpenSourceSection() {
   return (
     <BaseSection title="Open Source">
-      <div className="grid gap-6 xl:grid-cols-2 print:gap-4">
+      <div className="grid gap-6 xl:grid-cols-2 print:gap-3">
         <OpenSourceBlock
           title="Cryptocurrency Order Book"
           sourceLink="github.com/alexrohleder/order-book"
@@ -39,6 +39,25 @@ function OpenSourceSection() {
             "Allows use of social login with Facebook and Google",
           ]}
           techStack={["VueJS", "TypeScript", "Firebase", "Vue Router", "SCSS"]}
+        />
+        <OpenSourceBlock
+          title="Bike Rental App"
+          sourceLink="github.com/alexrohleder/bike-rental"
+          year={2022}
+          highlights={[
+            "Showcase app for mentorship with backend and frontend set up",
+            "Implement authentication with multiple roles",
+            "Focuses on user experience and accessibility; uses the HTML efficiently",
+          ]}
+          techStack={[
+            "React",
+            "TypeScript",
+            "Prisma",
+            "Tailwind",
+            "NextJS",
+            "NodeJS",
+            "PostgreSQL",
+          ]}
         />
       </div>
     </BaseSection>
