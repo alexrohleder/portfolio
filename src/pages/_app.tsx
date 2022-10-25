@@ -1,9 +1,9 @@
-import { DefaultSeo } from "next-seo";
-import { ThemeProvider } from "next-themes";
 import Head from "next/head";
+import { DefaultSeo } from "next-seo";
+import { useRouter } from "next/router";
+import { ThemeProvider } from "next-themes";
 import seo from "../../next-seo.config";
 import "tailwindcss/tailwind.css";
-import { useRouter } from "next/router";
 
 function App({ Component, pageProps }) {
   const { route } = useRouter();

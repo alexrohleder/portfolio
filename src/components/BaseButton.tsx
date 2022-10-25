@@ -1,10 +1,11 @@
+import type { ComponentPropsWithoutRef } from "react";
 import cn from "../lib/cn";
 import match from "../lib/match";
 
 type CommonProps = { variant?: "primary" | "secondary" };
 
-type AnchorProps = React.ComponentPropsWithoutRef<"a">;
-type ButtonProps = React.ComponentPropsWithoutRef<"button">;
+type AnchorProps = ComponentPropsWithoutRef<"a">;
+type ButtonProps = ComponentPropsWithoutRef<"button">;
 
 type Props = AnchorProps | ButtonProps;
 

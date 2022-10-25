@@ -1,7 +1,8 @@
+import type { ComponentPropsWithoutRef } from "react";
 import cn from "../lib/cn";
 import match from "../lib/match";
 
-type Props = React.ComponentPropsWithoutRef<"a"> & {
+type Props = ComponentPropsWithoutRef<"a"> & {
   variant?: "primary" | "secondary";
 };
 

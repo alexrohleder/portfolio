@@ -1,18 +1,18 @@
-import React from "react";
+import { Children, ReactNode } from "react";
 import cn from "../lib/cn";
 import BaseLink from "./BaseLink";
 
 type Props = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 function BasePages(props: Props) {
-  const pages = React.Children.count(props.children);
+  const pages = Children.count(props.children);
   const lastPageIndex = pages - 1;
 
   return (
     <>
-      {React.Children.map(props.children, (page, index) => {
+      {Children.map(props.children, (page, index) => {
         const printSize =
           index === lastPageIndex
             ? "print:h-[296mm] print:w-[210mm]"

@@ -1,4 +1,4 @@
-import { CalendarIcon, LocationMarkerIcon } from "@heroicons/react/outline";
+import { CalendarIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import getFormattedDate from "../../lib/getFormattedDate";
 import getWorkedTime from "../../lib/getWorkedTime";
 import BaseLink from "../BaseLink";
@@ -49,7 +49,7 @@ function ExperienceBlock(props: Props) {
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <LocationMarkerIcon className="w-4 h-4" />
+          <MapPinIcon className="w-4 h-4" />
           <div>{props.location}</div>
         </div>
       </div>

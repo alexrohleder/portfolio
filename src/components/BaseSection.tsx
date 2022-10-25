@@ -1,8 +1,10 @@
+import type { ReactNode } from "react";
+
 type Props = {
   title: string;
   subTitle?: string;
   footerNote?: string;
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 function BaseSection({ title, subTitle, footerNote, children }: Props) {

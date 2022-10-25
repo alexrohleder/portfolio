@@ -1,4 +1,8 @@
-import { CalendarIcon, CodeIcon, LinkIcon } from "@heroicons/react/outline";
+import {
+  CalendarIcon,
+  CodeBracketIcon,
+  LinkIcon,
+} from "@heroicons/react/24/outline";
 import BaseLink from "../BaseLink";
 
 type Props = {
@@ -20,7 +24,7 @@ function OpenSourceBlock(props: Props) {
           <div>{props.year}</div>
         </div>
         <div className="flex items-center gap-2">
-          <CodeIcon className="w-4 h-4" />
+          <CodeBracketIcon className="w-4 h-4" />
           <div>
             <BaseLink
               variant="primary"

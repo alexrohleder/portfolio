@@ -1,4 +1,4 @@
-import { BriefcaseIcon, CalendarIcon } from "@heroicons/react/outline";
+import { BriefcaseIcon, CalendarIcon } from "@heroicons/react/24/outline";
 import getFormattedDate from "../../lib/getFormattedDate";
 import getWorkedTime from "../../lib/getWorkedTime";
 import BaseLink from "../BaseLink";

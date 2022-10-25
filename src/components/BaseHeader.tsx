@@ -3,11 +3,11 @@ import Link from "next/link";
 import {
   PhoneIcon,
   AtSymbolIcon,
-  LocationMarkerIcon,
-  ExternalLinkIcon,
+  MapPinIcon,
+  LinkIcon,
   SunIcon,
   MoonIcon,
-} from "@heroicons/react/outline";
+} from "@heroicons/react/24/outline";
 import useTheme from "../lib/hooks/useTheme";
 import profileImg from "../../public/images/profile.jpg";
 import { useEffect, useState } from "react";
@@ -27,17 +27,15 @@ function BaseHeader() {
     <header className="flex flex-col gap-6 lgp:flex-row">
       <div className="h-36 w-36">
         <Link href="/">
-          <a>
-            <Image
-              priority
-              width={160}
-              height={160}
-              placeholder="blur"
-              className="rounded"
-              alt="Alex Rohleder's profile picture"
-              src={profileImg}
-            />
-          </a>
+          <Image
+            priority
+            width={160}
+            height={160}
+            placeholder="blur"
+            className="rounded"
+            alt="Alex Rohleder's profile picture"
+            src={profileImg}
+          />
         </Link>
       </div>
       <div className="flex flex-col gap-6 print:gap-0 lg:gap-4 lgp:flex-1 lgp:h-36 lgp:justify-between">
@@ -85,11 +83,11 @@ function BaseHeader() {
             </BaseLink>
           </div>
           <div className="flex items-center gap-2">
-            <LocationMarkerIcon className="w-4 h-4" stroke="currentColor" />
+            <MapPinIcon className="w-4 h-4" stroke="currentColor" />
             Oslo, Norway
           </div>
           <div className="flex items-center gap-2">
-            <ExternalLinkIcon className="w-4 h-4" stroke="currentColor" />
+            <LinkIcon className="w-4 h-4" stroke="currentColor" />
             <BaseLink
               href="https://linkedin.com/in/alexrohleder"
               target="_blank"
@@ -99,7 +97,7 @@ function BaseHeader() {
             </BaseLink>
           </div>
           <div className="flex items-center gap-2">
-            <ExternalLinkIcon className="w-4 h-4" stroke="currentColor" />
+            <LinkIcon className="w-4 h-4" stroke="currentColor" />
             <BaseLink
               href="https://mentorcruise.com/mentor/alexrohleder/"
               target="_blank"
@@ -109,7 +107,7 @@ function BaseHeader() {
             </BaseLink>
           </div>
           <div className="flex items-center gap-2">
-            <ExternalLinkIcon className="w-4 h-4" stroke="currentColor" />
+            <LinkIcon className="w-4 h-4" stroke="currentColor" />
             <BaseLink
               href="https://github.com/alexrohleder"
               target="_blank"
