@@ -9,12 +9,11 @@ function SummarySection() {
           well-performing user experiences.
         </p>
         <p>
-          I believe that work is a significant portion of my day, so I try to
-          make the best out of it for my colleagues and me.
+          I believe that work is such a significant portion of my day, that being
+          great at it makes me happier and more fulfilled.
         </p>
         <p>
-          To achieve that, I focus on empathy during conversations and try to
-          deliver something I&apos;m happy with.
+          I focus on being a team player; to be empatic, friendly, and to write clean, maintainable code.
         </p>
       </div>
     </BaseSection>

@@ -1,6 +1,6 @@
 type Props = {
   name: string;
-  years: 1 | 2 | 3 | 4 | 5;
+  years: number;
 };
 
 function SkillBlock(props: Props) {

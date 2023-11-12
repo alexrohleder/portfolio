@@ -56,8 +56,8 @@ function ExperienceBlock(props: Props) {
       {props.summary && <p>{props.summary}</p>}
       {props.highlights && (
         <ol className="list-disc">
-          {props.highlights.map((highlight, index) => (
-            <li className="mb-2 print:mb-0" key={index}>
+          {props.highlights.map((highlight) => (
+            <li className="mt-2 print:mt-0" key={highlight}>
               {highlight};
             </li>
           ))}

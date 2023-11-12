@@ -14,14 +14,6 @@ const seo: NextSeoProps = {
     locale: "en_IE",
     url: "https://alexrohleder.com",
     site_name: "Alex Rohleder Portfolio",
-    // images: [
-    //   {
-    //     url: "/card.png",
-    //     width: 800,
-    //     height: 600,
-    //     alt: "Alex Rohleder Portfolio",
-    //   },
-    // ],
   },
   twitter: {
     handle: "@alexrohleder",

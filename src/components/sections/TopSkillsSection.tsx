@@ -11,13 +11,13 @@ function TopSkillsSection() {
         </div>
         <div className="flex-1">
           <SkillBlock name="TypeScript" years={5} />
-          <SkillBlock name="Sanity" years={1} />
+          <SkillBlock name="Sanity" years={2} />
         </div>
       </div>
       <div className="grid grid-cols-2 grid-rows-2 gap-2 print:hidden">
         <SkillBlock name="React" years={5} />
         <SkillBlock name="TypeScript" years={5} />
-        <SkillBlock name="Sanity" years={1} />
+        <SkillBlock name="Sanity" years={2} />
         <SkillBlock name="AWS" years={3} />
       </div>
     </BaseSection>

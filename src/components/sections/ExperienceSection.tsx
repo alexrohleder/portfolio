@@ -9,9 +9,15 @@ function ExperienceSection() {
     >
       <div className="flex flex-col gap-3">
         <ExperienceBlock
-          title="Software Engineer (Independent Contractor)"
+          title="Software Engineer (Independent Consultant)"
           startDate={new Date(2022, 3)}
-          location="Oslo, Norway"
+          location="Oslo, Norway (Remote from Trondheim)"
+          highlights={[
+            "Setting up monorepos, shared packages and code quality tooling",
+            "Improve frontend build. Got ~380% faster CI and 45% smaller bundles sizes",
+            "Adjusting frontend architecture to enable faster development cycles",
+            "Working on ecommerce store UX, backoffice and Sanity CMS implementation"
+          ]}
         />
         <ExperienceBlock
           title="Software Engineer (Senior)"
@@ -22,25 +28,10 @@ function ExperienceSection() {
           location="Trondheim, Norway"
           summary="Sportradar, the world's leading sports data company, has clients like NHL, NBA, FIFA and NASCAR."
           highlights={[
-            "Improved DX for micro-frontend teams. One of the achieved results was a reduction in avg. 70% in build times",
-            "Reduced by 87% the number of software vulnerabilities over two teams, either by triage or by development advising",
-            "Resolves performance issues on applications with a high level of data updates or high amount of data",
-            "Supports hiring, onboarding and mentoring new employees",
-          ]}
-        />
-        <ExperienceBlock
-          title="Software Engineer (Mid-level)"
-          employeer="Grupo Meta"
-          employeerWebsite="https://www.meta.com.br/"
-          startDate={new Date(2016, 2)}
-          endDate={new Date(2018, 0)}
-          location="Recanto Maestro, Brazil"
-          summary="Meta is an international IT outsourcing enterprise with clients like Sascar, Unimed and O Boticário."
-          highlights={[
-            "Responsible for deployments of critical applications that would lead to severe impact to business in case of downtimes",
-            "Worked with different development methodologies, such as Scrum and variations, accordingly to clients' choices",
-            "Nominated as the technical reference for PHP outsourcing, helped with architecting and kick-starting multiple projects",
-            "Represented the company in client conversations, taking technical decisions to solve their problems",
+            "Improves DX for micro-frontend teams. The achieved results include ~70% faster build time",
+            "Manages the security of frontend apps. Reduced the number of vulnerabilities by 87%",
+            "Resolves performance issues on real-time data-heavy applications",
+            "Supports hiring, onboarding and mentoring of new employees",
           ]}
         />
       </div>

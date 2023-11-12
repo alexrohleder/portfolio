@@ -24,9 +24,9 @@ function BasePages(props: Props) {
             className={cn("print:relative container mx-auto p-8", printSize)}
           >
             {page}
-            <div className="absolute hidden text-right bottom-4 right-8 left-8 print:block">
+            <div className="absolute hidden text-sm text-right bottom-4 right-8 left-8 print:block">
               <span className="text-gray-500">
-                Made with React. See more at{" "}
+                This curriculum was made by me with React. See more at{" "}
                 <BaseLink
                   variant="primary"
                   href="https://linkedin.com/in/alexrohleder"

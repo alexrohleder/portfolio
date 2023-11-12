@@ -84,7 +84,7 @@ function BaseHeader() {
           </div>
           <div className="flex items-center gap-2">
             <MapPinIcon className="w-4 h-4" stroke="currentColor" />
-            Oslo, Norway
+            Trondheim, Norway
           </div>
           <div className="flex items-center gap-2">
             <LinkIcon className="w-4 h-4" stroke="currentColor" />

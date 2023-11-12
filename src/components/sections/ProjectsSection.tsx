@@ -3,7 +3,7 @@ import ProjectBlock from "../blocks/ProjectBlock";
 
 function ProjectsSection() {
   return (
-    <BaseSection title="Projects">
+    <BaseSection title="Projects" subTitle="There are more, ask me about it!">
       <div className="grid gap-6 xl:grid-cols-2 print:gap-3">
         <ProjectBlock
           title="PowerOffice website"
